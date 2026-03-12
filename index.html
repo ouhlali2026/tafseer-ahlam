@@ -33,64 +33,115 @@
         </div>
     </header>
 
-    <main class="container main-content">
-        <!-- المحتوى الرئيسي -->
-        <section class="content">
-            <h1>مرحباً بك في موقع تفسير الأحلام</h1>
-            <p>دليلك الموثوق لتفسير أحلامك وفق أشهر المفسرين (ابن سيرين، النابلسي، ابن شاهين).</p>
-            <div class="dream-list" id="dreamList">
-                <div class="loading">جاري تحميل التفسيرات...</div>
+    <main class="container">
+        <!-- شريط الإحصائيات -->
+        <div class="stats-bar">
+            <div class="stat-item-large">
+                <span class="stat-number-large" id="totalDreamsFooter">200+</span>
+                <span class="stat-label-large">تفسير</span>
             </div>
-        </section>
+            <div class="stat-item-large">
+                <span class="stat-number-large">6</span>
+                <span class="stat-label-large">مفسرين</span>
+            </div>
+            <div class="stat-item-large">
+                <span class="stat-number-large">10k+</span>
+                <span class="stat-label-large">زائر يومي</span>
+            </div>
+        </div>
 
-        <!-- الشريط الجانبي -->
-        <aside class="sidebar">
-            <div class="sidebar-widget">
-                <h3>عن الموقع</h3>
-                <p>موقع تفسير الأحلام يقدم تفسيرات دقيقة مستمدة من التراث الإسلامي مع لمسات عصرية. نسعى لأن نكون مرجعك الأول.</p>
-            </div>
-            <div class="sidebar-widget">
-                <h3>إحصائيات سريعة</h3>
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-number" id="totalDreams">0</span>
-                        <span class="stat-label">تفسير</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="totalInterpreters">4</span>
-                        <span class="stat-label">مفسر</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" id="totalVisitors">10k+</span>
-                        <span class="stat-label">زائر</span>
-                    </div>
+        <!-- نصيحة اليوم -->
+        <div class="tip-of-day">
+            <p>أحلام الثعابين غالباً تدل على أعداء محيطين بك. لا تخف، فقط كن حذراً في الفترة القادمة.</p>
+        </div>
+
+        <!-- أكثر الأحلام بحثاً -->
+        <div class="hot-dreams">
+            <h2>🔍 أكثر الأحلام بحثاً اليوم</h2>
+            <div class="hot-dreams-grid">
+                <div class="hot-dream-card">
+                    <div class="hot-dream-emoji">🐍</div>
+                    <div class="hot-dream-title">ثعبان</div>
+                    <div class="hot-dream-count">1.5k <span>بحث</span></div>
+                </div>
+                <div class="hot-dream-card">
+                    <div class="hot-dream-emoji">🦁</div>
+                    <div class="hot-dream-title">أسد</div>
+                    <div class="hot-dream-count">1.2k <span>بحث</span></div>
+                </div>
+                <div class="hot-dream-card">
+                    <div class="hot-dream-emoji">💀</div>
+                    <div class="hot-dream-title">موت</div>
+                    <div class="hot-dream-count">1.1k <span>بحث</span></div>
+                </div>
+                <div class="hot-dream-card">
+                    <div class="hot-dream-emoji">💍</div>
+                    <div class="hot-dream-title">زواج</div>
+                    <div class="hot-dream-count">1.4k <span>بحث</span></div>
                 </div>
             </div>
-            <div class="sidebar-widget">
-                <h3>أشهر 5 أحلام هذا الأسبوع</h3>
-                <ul id="popularDreams">
-                    <li>جاري التحميل...</li>
-                </ul>
-            </div>
-            <div class="sidebar-widget">
-                <h3>شاركنا حلمك</h3>
-                <form class="share-form" action="shared-dreams/submit.html" method="get">
-                    <input type="text" placeholder="عنوان الحلم (اختياري)" name="title">
-                    <textarea rows="4" placeholder="اكتب حلمك هنا..." name="dream" required></textarea>
-                    <button type="submit">إرسال الحلم</button>
-                </form>
-            </div>
-            <div class="sidebar-widget">
-                <h3>تصنيفات سريعة</h3>
-                <ul>
-                    <li><a href="category.html?name=animals">الحيوانات</a></li>
-                    <li><a href="category.html?name=people">الأشخاص</a></li>
-                    <li><a href="category.html?name=places">الأماكن</a></li>
-                    <li><a href="category.html?name=events">الأحداث</a></li>
-                    <li><a href="category.html?name=emotions">المشاعر</a></li>
-                </ul>
-            </div>
-        </aside>
+        </div>
+
+        <!-- المحتوى الرئيسي + الشريط الجانبي -->
+        <div class="main-content">
+            <!-- المحتوى الرئيسي -->
+            <section class="content">
+                <h1>مرحباً بك في موقع تفسير الأحلام</h1>
+                <p>دليلك الموثوق لتفسير أحلامك وفق أشهر المفسرين (ابن سيرين، النابلسي، ابن شاهين).</p>
+                <div class="dream-list" id="dreamList">
+                    <div class="loading">جاري تحميل التفسيرات...</div>
+                </div>
+            </section>
+
+            <!-- الشريط الجانبي -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>عن الموقع</h3>
+                    <p>موقع تفسير الأحلام يقدم تفسيرات دقيقة مستمدة من التراث الإسلامي مع لمسات عصرية. نسعى لأن نكون مرجعك الأول.</p>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>إحصائيات سريعة</h3>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalDreams">0</span>
+                            <span class="stat-label">تفسير</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalInterpreters">4</span>
+                            <span class="stat-label">مفسر</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalVisitors">10k+</span>
+                            <span class="stat-label">زائر</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>أشهر 5 أحلام هذا الأسبوع</h3>
+                    <ul id="popularDreams">
+                        <li>جاري التحميل...</li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>شاركنا حلمك</h3>
+                    <form class="share-form" action="shared-dreams/submit.html" method="get">
+                        <input type="text" placeholder="عنوان الحلم (اختياري)" name="title">
+                        <textarea rows="4" placeholder="اكتب حلمك هنا..." name="dream" required></textarea>
+                        <button type="submit">إرسال الحلم</button>
+                    </form>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>تصنيفات سريعة</h3>
+                    <ul>
+                        <li><a href="category.html?name=animals">الحيوانات</a></li>
+                        <li><a href="category.html?name=people">الأشخاص</a></li>
+                        <li><a href="category.html?name=places">الأماكن</a></li>
+                        <li><a href="category.html?name=events">الأحداث</a></li>
+                        <li><a href="category.html?name=emotions">المشاعر</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>
@@ -105,7 +156,7 @@
                     <li><a href="about.html">من نحن</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
                     <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                    <li><a href="sitemap.xml">خريطة الموقع</a></li>
+                    <li><a href="terms.html">شروط الاستخدام</a></li>
                 </ul>
             </div>
             <div>
@@ -123,7 +174,6 @@
         </div>
     </footer>
 
-    <script src="js/dreams-loader.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
