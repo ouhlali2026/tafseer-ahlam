@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أشهر مفسري الأحلام | تفسير الأحلام</title>
+    <meta name="description" content="تعرف على أبرز مفسري الأحلام في التراث الإسلامي: ابن سيرين، النابلسي، ابن شاهين، والإمام الصادق. تصفح تفاسيرهم حسب الرؤيا.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">تفسير <span>الأحلام</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="letters.html">الحروف الهجائية</a></li>
+                    <li><a href="category.html">التصنيفات</a></li>
+                    <li><a href="interpreters.html">المفسرون</a></li>
+                    <li><a href="shared-dreams/index.html">شارك حلمك</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="ابحث عن تفسير..." id="searchInput">
+                <button onclick="searchDream()">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- المحتوى الرئيسي -->
+        <section class="content">
+            <h1 id="page-title">أشهر مفسري الأحلام</h1>
+            
+            <!-- قائمة المفسرين للتنقل السريع -->
+            <div class="interpreters-navigation" style="margin-bottom: 2rem; text-align: center;">
+                <h2>اختر مفسراً:</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-top: 1rem;" id="interpreters-list">
+                    <!-- سيتم تعبئة هذه القائمة عبر JavaScript -->
+                </div>
+            </div>
+
+            <!-- تفاصيل المفسر وقائمة تفسيراته -->
+            <div id="interpreter-detail" style="display: none;">
+                <div class="interpreter-bio" style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-right: 4px solid #3498DB;">
+                    <h2 id="interpreter-name"></h2>
+                    <p id="interpreter-bio-text"></p>
+                </div>
+                <h3>تفسيراته في الموقع:</h3>
+                <div class="dream-list" id="dreamList"></div>
+            </div>
+
+            <!-- رسالة الترحيب الافتراضية -->
+            <div id="default-message" style="text-align: center; padding: 2rem; background: white; border-radius: 8px;">
+                <p>اختر مفسراً من القائمة أعلاه لعرض سيرته وتفسيراته.</p>
+            </div>
+        </section>
+
+        <!-- الشريط الجانبي -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>عن الموقع</h3>
+                <p>موقع تفسير الأحلام يقدم تفسيرات دقيقة مستمدة من التراث الإسلامي مع لمسات عصرية. نسعى لأن نكون مرجعك الأول.</p>
+            </div>
+            <div class="sidebar-widget">
+                <h3>إحصائيات سريعة</h3>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalDreams">0</span>
+                        <span class="stat-label">تفسير</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalInterpreters">4</span>
+                        <span class="stat-label">مفسر</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalVisitors">10k+</span>
+                        <span class="stat-label">زائر</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-widget">
+                <h3>أشهر 5 أحلام هذا الأسبوع</h3>
+                <ul id="popularDreams">
+                    <li>جاري التحميل...</li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>شاركنا حلمك</h3>
+                <form class="share-form" action="shared-dreams/submit.html" method="get">
+                    <input type="text" placeholder="عنوان الحلم (اختياري)" name="title">
+                    <textarea rows="4" placeholder="اكتب حلمك هنا..." name="dream" required></textarea>
+                    <button type="submit">إرسال الحلم</button>
+                </form>
+            </div>
+            <div class="sidebar-widget">
+                <h3>تصنيفات سريعة</h3>
+                <ul>
+                    <li><a href="category.html?name=animals">الحيوانات</a></li>
+                    <li><a href="category.html?name=people">الأشخاص</a></li>
+                    <li><a href="category.html?name=places">الأماكن</a></li>
+                    <li><a href="category.html?name=events">الأحداث</a></li>
+                    <li><a href="category.html?name=emotions">المشاعر</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <h4>تفسير الأحلام</h4>
+                <p>مرجعك الموثوق لتفسير أحلامك وفق الكتاب والسنة وفهم السلف.</p>
+            </div>
+            <div>
+                <h4>روابط مهمة</h4>
+                <ul>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">شروط الاستخدام</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>تابعنا</h4>
+                <ul>
+                    <li><a href="#">فيسبوك</a></li>
+                    <li><a href="#">تويتر</a></li>
+                    <li><a href="#">تلغرام</a></li>
+                    <li><a href="#">واتساب</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 تفسير الأحلام. جميع الحقوق محفوظة (إعادة الصياغة بأسلوبنا).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // بيانات المفسرين (يمكن نقلها لملف JSON لاحقاً)
+        const interpretersData = {
+            'ibn-sirin': {
+                name: 'ابن سيرين',
+                bio: 'هو محمد بن سيرين البصري، تابعي جليل وأحد كبار علماء التفسير والحديث في القرن الأول الهجري. اشتهر بتفسير الأحلام حتى صار علماً فيها. كان معروفاً بالورع والزهد والصدق. تُوفي سنة 110 هـ.'
+            },
+            'al-nabulsi': {
+                name: 'عبد الغني النابلسي',
+                bio: 'هو عبد الغني بن إسماعيل النابلسي، عالم بالدين والأدب والتصوف. عاش في دمشق في القرن الحادي عشر الهجري. من أشهر كتبه "تعطير الأنام في تفسير الأحلام". تُوفي سنة 1143 هـ.'
+            },
+            'ibn-shahin': {
+                name: 'ابن شاهين',
+                bio: 'هو خليل بن شاهين الظاهري، عالم ومفسر من علماء القرن التاسع الهجري. من أشهر كتبه "الإشارات في علم العبارات" في تفسير الأحلام.'
+            },
+            'al-sadiq': {
+                name: 'الإمام الصادق',
+                bio: 'هو جعفر بن محمد الصادق، الإمام السادس عند الشيعة، ويُعتبر من كبار علماء أهل البيت. له إسهامات في تفسير الأحلام ونُسبت إليه مخطوطات في هذا المجال. تُوفي سنة 148 هـ.'
+            }
+        };
+
+        // دالة لعرض قائمة المفسرين في شريط التنقل
+        function displayInterpretersList() {
+            const listContainer = document.getElementById('interpreters-list');
+            if (!listContainer) return;
+
+            let html = '';
+            for (const [key, value] of Object.entries(interpretersData)) {
+                html += `<a href="?name=${key}" style="display: inline-block; padding: 0.5rem 1rem; background: #3498DB; color: white; text-decoration: none; border-radius: 5px;">${value.name}</a>`;
+            }
+            listContainer.innerHTML = html;
+        }
+
+        // دالة لعرض تفاصيل مفسر معين وتفسيراته
+        function loadInterpreterDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const interpreterKey = urlParams.get('name');
+
+            const defaultMessage = document.getElementById('default-message');
+            const interpreterDetail = document.getElementById('interpreter-detail');
+            const pageTitle = document.getElementById('page-title');
+
+            if (!interpreterKey || !interpretersData[interpreterKey]) {
+                // إخفاء التفاصيل وإظهار الرسالة الافتراضية
+                if (interpreterDetail) interpreterDetail.style.display = 'none';
+                if (defaultMessage) defaultMessage.style.display = 'block';
+                pageTitle.textContent = 'أشهر مفسري الأحلام';
+                document.title = 'أشهر مفسري الأحلام | تفسير الأحلام';
+                return;
+            }
+
+            // إظهار التفاصيل وإخفاء الرسالة الافتراضية
+            if (interpreterDetail) interpreterDetail.style.display = 'block';
+            if (defaultMessage) defaultMessage.style.display = 'none';
+
+            const interpreter = interpretersData[interpreterKey];
+            pageTitle.textContent = `تفسيرات ${interpreter.name}`;
+            document.title = `${interpreter.name} | تفسير الأحلام`;
+
+            // عرض السيرة
+            document.getElementById('interpreter-name').textContent = interpreter.name;
+            document.getElementById('interpreter-bio-text').textContent = interpreter.bio;
+
+            // تحميل التفسيرات الخاصة بهذا المفسر
+            fetch('data/dreams.json')
+                .then(response => response.json())
+                .then(data => {
+                    const dreams = data.dreams;
+                    
+                    // تصفية التفسيرات التي تحتوي على اسم المفسر (بما أن الحقل interpreter قد يحتوي على أكثر من مفسر)
+                    const filteredDreams = dreams.filter(dream => 
+                        dream.interpreter && dream.interpreter.includes(interpreter.name)
+                    );
+                    
+                    const dreamList = document.getElementById('dreamList');
+                    
+                    if (filteredDreams.length === 0) {
+                        dreamList.innerHTML = `<div class="error">لا توجد تفسيرات متاحة لـ ${interpreter.name} حالياً. سيتم إضافتها قريباً.</div>`;
+                        return;
+                    }
+                    
+                    // عرض التفسيرات
+                    let html = '';
+                    filteredDreams.forEach(dream => {
+                        html += `
+                            <div class="dream-card">
+                                <h3>${dream.title}</h3>
+                                <div class="meta">
+                                    <span>📅 ${dream.date_added}</span>
+                                    <span>👁️ ${dream.popularity} مشاهدة</span>
+                                    <span>📚 ${dream.interpreter}</span>
+                                </div>
+                                <p class="summary">${dream.summary}</p>
+                                <a href="dream.html?id=${dream.id}" class="read-more">اقرأ التفسير كاملاً</a>
+                            </div>
+                        `;
+                    });
+                    
+                    dreamList.innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('خطأ:', error);
+                    document.getElementById('dreamList').innerHTML = '<div class="error">حدث خطأ في تحميل التفسيرات. حاول لاحقاً.</div>';
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // تحديث الشريط الجانبي
+            fetch('data/dreams.json')
+                .then(response => response.json())
+                .then(data => {
+                    updateStats(data.dreams);
+                    updatePopularDreams(data.dreams);
+                });
+            
+            // عرض قائمة المفسرين
+            displayInterpretersList();
+            
+            // تحميل تفاصيل المفسر المحدد (إن وجد)
+            loadInterpreterDetails();
+        });
+    </script>
+</body>
+</html>
