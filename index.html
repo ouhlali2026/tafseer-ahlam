@@ -2,25 +2,843 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفسير الأحلام</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>تفسير الأحلام – دليل تفسير الأحلام لابن سيرين والنابلسي</title>
+    <meta name="description" content="أكبر موقع عربي لتفسير الأحلام. تفسير الأحلام لابن سيرين، النابلسي، وابن كثير. ابحث عن تفسير حلمك الآن.">
+    <meta name="keywords" content="تفسير الأحلام, تفسير حلم, ابن سيرين, النابلسي, رؤيا, منام">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
-        body {
-            background-color: #2c3e50;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+        /* تنسيقات عامة */
+        :root {
+            --primary: #5e2a84;
+            --primary-light: #7d4b9e;
+            --secondary: #d4af37;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --border: #e2e8f0;
+            --transition: all 0.3s ease;
         }
-        h1 {
-            color: #ffd700;
-            font-size: 3rem;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* شريط التنقل */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo i {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        /* قسم الهيرو */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            max-width: 700px;
+            margin: 0 auto 25px;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 25px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-item i {
+            color: var(--secondary);
+        }
+
+        /* تخطيط المحتوى الرئيسي + الشريط الجانبي */
+        .main-content {
+            display: flex;
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .dreams-section {
+            flex: 2;
+            min-width: 0;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* مربع البحث */
+        .search-container {
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            outline: none;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1rem;
+            background: transparent;
+        }
+
+        .search-box button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            height: 100%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-box button:hover {
+            background: var(--primary-light);
+        }
+
+        /* أقسام التصنيف */
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin: 30px 0 15px;
+            position: relative;
+            padding-right: 15px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--secondary);
+            border-radius: 5px;
+        }
+
+        .tags-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background: white;
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .category-btn {
+            background: white;
+            color: var(--dark);
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .category-btn i {
+            color: var(--secondary);
+        }
+
+        .category-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .category-btn:hover i {
+            color: white;
+        }
+
+        /* شبكة التفسيرات */
+        .dreams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .dream-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 15px;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .dream-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(94,42,132,0.1);
+        }
+
+        .dream-icon {
+            width: 60px;
+            height: 60px;
+            background: #f0e6ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .dream-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .dream-name {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .dream-link {
+            color: var(--primary);
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .dream-card:hover .dream-link {
+            opacity: 1;
+            gap: 8px;
+        }
+
+        /* الشريط الجانبي */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .widget {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .widget-title i {
+            color: var(--secondary);
+        }
+
+        .tip-box {
+            background: #f0e6ff;
+            padding: 15px;
+            border-radius: 10px;
+            border-right: 4px solid var(--primary);
+        }
+
+        .top-dreams-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-dreams-list a {
+            color: var(--dark);
+            transition: var(--transition);
+        }
+
+        .top-dreams-list a:hover {
+            color: var(--primary);
+            padding-right: 5px;
+        }
+
+        .service-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .service-btn {
+            background: var(--light);
+            padding: 12px 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            border: 1px solid var(--border);
+        }
+
+        .service-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .service-btn i {
+            width: 20px;
+        }
+
+        .quick-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .quick-stat {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quick-stat-number {
+            background: var(--primary);
+            color: white;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            color: var(--dark);
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* تذييل الصفحة */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: white;
+            padding-right: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* تجاوب الجوال */
+        @media (max-width: 992px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .sidebar {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .stat-item {
+                padding: 8px 15px;
+            }
+            .dreams-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dreams-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .dream-icon {
+                width: 50px;
+                height: 50px;
+            }
+            .dream-icon i {
+                font-size: 1.6rem;
+            }
+            .dream-name {
+                font-size: 0.9rem;
+            }
+            .search-box input {
+                padding: 12px 15px;
+            }
+            .search-box button {
+                padding: 0 15px;
+            }
+            .category-buttons {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+            .category-btn {
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>تفسير الأحلام</h1>
-    <p>الموقع يعمل بنجاح.</p>
-    <p>هذا هو الإصدار الأساسي.</p>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-moon"></i>
+                    <span>تفسير الأحلام</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="letters.html">تفسير حسب الحروف</a></li>
+                    <li><a href="about.html">عن الموقع</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero">
+        <div class="container">
+            <h1>اكتشف تفسير أحلامك مع كبار المفسرين</h1>
+            <p>تفسير الأحلام لابن سيرين، النابلسي، ابن كثير، والإمام الصادق. ابحث عن حلمك واحصل على التفسير الدقيق.</p>
+            <div class="hero-stats">
+                <div class="stat-item"><i class="fas fa-book-open"></i> 500+ تفسير</div>
+                <div class="stat-item"><i class="fas fa-users"></i> 10,000+ زائر</div>
+                <div class="stat-item"><i class="fas fa-star"></i> 4.8 تقييم</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- مربع البحث -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="ابحث عن تفسير حلم... (مثال: ثعبان، أسد، موت، زواج)" onkeyup="searchDream()">
+                <button aria-label="بحث"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- تصنيفات سريعة -->
+        <div class="category-buttons">
+            <a href="#" class="category-btn"><i class="fas fa-cat"></i> حيوانات</a>
+            <a href="#" class="category-btn"><i class="fas fa-user"></i> أشخاص</a>
+            <a href="#" class="category-btn"><i class="fas fa-city"></i> أماكن</a>
+            <a href="#" class="category-btn"><i class="fas fa-heart"></i> مشاعر</a>
+            <a href="#" class="category-btn"><i class="fas fa-car"></i> وسائل نقل</a>
+            <a href="#" class="category-btn"><i class="fas fa-food"></i> طعام</a>
+        </div>
+
+        <!-- المحتوى الرئيسي + الشريط الجانبي -->
+        <div class="main-content">
+            <!-- قسم التفسيرات (يمين) -->
+            <div class="dreams-section">
+                <h2 class="section-title">أحدث التفسيرات المضافة</h2>
+                <div class="dreams-grid" id="dreamsGrid">
+                    <!-- بطاقات التفسيرات -->
+                    <a href="snake.html" class="dream-card" data-name="ثعبان">
+                        <div class="dream-icon"><i class="fas fa-crow"></i></div>
+                        <span class="dream-name">الثعبان</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="lion.html" class="dream-card" data-name="أسد">
+                        <div class="dream-icon"><i class="fas fa-paw"></i></div>
+                        <span class="dream-name">الأسد</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="death.html" class="dream-card" data-name="موت">
+                        <div class="dream-icon"><i class="fas fa-skull"></i></div>
+                        <span class="dream-name">الموت</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="marriage.html" class="dream-card" data-name="زواج">
+                        <div class="dream-icon"><i class="fas fa-heart"></i></div>
+                        <span class="dream-name">الزواج</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="pregnancy.html" class="dream-card" data-name="حمل">
+                        <div class="dream-icon"><i class="fas fa-baby"></i></div>
+                        <span class="dream-name">الحمل</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="money.html" class="dream-card" data-name="مال">
+                        <div class="dream-icon"><i class="fas fa-coins"></i></div>
+                        <span class="dream-name">المال</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="flying.html" class="dream-card" data-name="طيران">
+                        <div class="dream-icon"><i class="fas fa-dove"></i></div>
+                        <span class="dream-name">الطيران</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="water.html" class="dream-card" data-name="ماء">
+                        <div class="dream-icon"><i class="fas fa-water"></i></div>
+                        <span class="dream-name">الماء</span>
+                        <span class="dream-link">عرض التفسير <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                </div>
+                <div id="noResults" class="no-results" style="display: none; text-align: center; padding: 30px;">
+                    <i class="fas fa-search" style="font-size: 2rem; color: var(--gray);"></i>
+                    <p>لا توجد نتائج تطابق بحثك</p>
+                </div>
+
+                <h2 class="section-title">تفسير حسب الحروف</h2>
+                <div class="tags-cloud">
+                    <span class="tag">ألف</span>
+                    <span class="tag">باء</span>
+                    <span class="tag">تاء</span>
+                    <span class="tag">ثاء</span>
+                    <span class="tag">جيم</span>
+                    <span class="tag">حاء</span>
+                    <span class="tag">خاء</span>
+                    <span class="tag">دال</span>
+                    <span class="tag">ذال</span>
+                    <span class="tag">راء</span>
+                    <span class="tag">زاي</span>
+                    <span class="tag">سين</span>
+                    <span class="tag">شين</span>
+                    <span class="tag">صاد</span>
+                    <span class="tag">ضاد</span>
+                    <span class="tag">طاء</span>
+                    <span class="tag">ظاء</span>
+                    <span class="tag">عين</span>
+                    <span class="tag">غين</span>
+                    <span class="tag">فاء</span>
+                    <span class="tag">قاف</span>
+                    <span class="tag">كاف</span>
+                    <span class="tag">لام</span>
+                    <span class="tag">ميم</span>
+                    <span class="tag">نون</span>
+                    <span class="tag">هاء</span>
+                    <span class="tag">واو</span>
+                    <span class="tag">ياء</span>
+                </div>
+            </div>
+
+            <!-- الشريط الجانبي (يسار) -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-lightbulb"></i> نصيحة اليوم</h3>
+                    <div class="tip-box">
+                        <p>أفضل وقت لتفسير الأحلام هو بعد صلاة الفجر، والاستعانة بالله أولاً.</p>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-chart-line"></i> أكثر التفسيرات بحثاً</h3>
+                    <ul class="top-dreams-list">
+                        <li><i class="fas fa-crow" style="color: var(--primary);"></i> <a href="snake.html">الثعبان</a></li>
+                        <li><i class="fas fa-paw" style="color: var(--primary);"></i> <a href="lion.html">الأسد</a></li>
+                        <li><i class="fas fa-skull" style="color: var(--primary);"></i> <a href="death.html">الموت</a></li>
+                        <li><i class="fas fa-heart" style="color: var(--primary);"></i> <a href="marriage.html">الزواج</a></li>
+                        <li><i class="fas fa-baby" style="color: var(--primary);"></i> <a href="pregnancy.html">الحمل</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-briefcase"></i> خدماتنا</h3>
+                    <div class="service-links">
+                        <a href="consultation.html" class="service-btn"><i class="fas fa-phone-alt"></i> استشارة خاصة</a>
+                        <a href="interpretation.html" class="service-btn"><i class="fas fa-book-open"></i> تفسير حلمك</a>
+                        <a href="books.html" class="service-btn"><i class="fas fa-shopping-cart"></i> كتب تفسير الأحلام</a>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-chart-pie"></i> إحصائيات سريعة</h3>
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">500+</span>
+                            <span>تفسير</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">10k+</span>
+                            <span>زائر شهرياً</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">4.8</span>
+                            <span>تقييم الزوار</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-share-alt"></i> تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>تفسير الأحلام</h4>
+                    <p>الموقع الأكبر لتفسير الأحلام بالعربية، يعتمد على أمهات الكتب لابن سيرين والنابلسي وابن كثير.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="letters.html">تفسير حسب الحروف</a></li>
+                        <li><a href="about.html">عن الموقع</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>سياسة الموقع</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">اتفاقية الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="#"><i class="fab fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 موقع تفسير الأحلام – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- كود البحث البسيط -->
+    <script>
+        function searchDream() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.trim().toLowerCase();
+            const cards = document.querySelectorAll('.dream-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                if (name.includes(filter) || filter === '') {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            const noResultsDiv = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResultsDiv.style.display = 'block';
+            } else {
+                noResultsDiv.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
