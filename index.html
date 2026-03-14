@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (مجاني) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- ربط ملف التصميم -->
+    <!-- ملف التصميم -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
         <ul class="nav-links">
             <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
             <li><a href="#categories"><i class="fas fa-tags"></i> التصنيفات</a></li>
-            <li><a href="interpreters.html"><i class="fas fa-users"></i> المفسرون</a></li>
+            <li><a href="about.html"><i class="fas fa-users"></i> عن الموقع</a></li>
             <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
         </ul>
     </nav>
@@ -62,95 +62,79 @@
         </div>
     </header>
 
-    <!-- قسم التصنيفات الرئيسية (النجم الأول) -->
+    <!-- قسم التصنيفات الرئيسية -->
     <section class="categories-section" id="categories">
         <div class="container">
             <h2 class="section-title">تصفح الأحلام <span>بالتصنيفات</span></h2>
             <p class="section-subtitle">اختر التصنيف الذي تبحث عنه لتجد تفسير حلمك بسهولة</p>
             
             <div class="categories-grid">
-                <!-- بطاقة تصنيف 1 -->
-                <a href="categories/hayawanat.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-paw"></i>
-                    </div>
+                <!-- الحيوانات -->
+                <a href="hayawanat.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-paw"></i></div>
                     <h3>الحيوانات</h3>
                     <p class="category-desc">الأسد، النمل، الثعبان، الفأر...</p>
                     <span class="category-count">١٤٢ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 2 -->
-                <a href="categories/tuyoor.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-dove"></i>
-                    </div>
+                <!-- الطيور -->
+                <a href="tuyoor.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-dove"></i></div>
                     <h3>الطيور</h3>
-                    <p class="category-desc">العصافير، النسور، الحمام...</p>
+                    <p class="category-desc">الحمام، النورس، الهدهد، الببغاء...</p>
                     <span class="category-count">٩٨ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 3 -->
-                <a href="categories/amakin.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
+                <!-- الأماكن -->
+                <a href="amakin.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-map-marked-alt"></i></div>
                     <h3>الأماكن</h3>
                     <p class="category-desc">المسجد، البحر، الجبل، المنزل...</p>
                     <span class="category-count">٢١٥ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 4 -->
-                <a href="categories/ashkhas.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
+                <!-- الأشخاص -->
+                <a href="ashkhas.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-user-tie"></i></div>
                     <h3>الأشخاص</h3>
                     <p class="category-desc">الملك، العالم، الأقارب...</p>
                     <span class="category-count">١٦٧ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 5 -->
-                <a href="categories/jamadat.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
+                <!-- الجمادات -->
+                <a href="jamadat.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-gem"></i></div>
                     <h3>الجمادات</h3>
                     <p class="category-desc">الذهب، الفضة، الأحجار...</p>
                     <span class="category-count">٨٦ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 6 -->
-                <a href="categories/makoolat.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
+                <!-- المأكولات -->
+                <a href="makoolat.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-utensils"></i></div>
                     <h3>المأكولات</h3>
                     <p class="category-desc">الخبز، العسل، الفاكهة...</p>
                     <span class="category-count">١٢٣ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 7 -->
-                <a href="categories/malabis.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
+                <!-- الملابس -->
+                <a href="malabis.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-tshirt"></i></div>
                     <h3>الملابس</h3>
                     <p class="category-desc">الثوب الأبيض، الحرير، العمامة...</p>
                     <span class="category-count">٧٩ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
                 
-                <!-- بطاقة تصنيف 8 -->
-                <a href="categories/zawahir.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-cloud-sun"></i>
-                    </div>
+                <!-- الظواهر الطبيعية -->
+                <a href="zawahir.html" class="category-card">
+                    <div class="category-icon"><i class="fas fa-cloud-sun"></i></div>
                     <h3>الظواهر الطبيعية</h3>
                     <p class="category-desc">المطر، الرعد، الزلازل...</p>
                     <span class="category-count">٦٤ تفسير</span>
@@ -160,7 +144,7 @@
         </div>
     </section>
 
-    <!-- قسم أحدث التفسيرات -->
+    <!-- قسم أحدث التفسيرات (نموذج) -->
     <section class="latest-interpretations">
         <div class="container">
             <h2 class="section-title">أحدث <span>التفسيرات</span></h2>
@@ -175,7 +159,7 @@
                     <div class="card-content">
                         <h3>رؤية النمل في المنام</h3>
                         <div class="interpreter"><i class="fas fa-user"></i> ابن سيرين</div>
-                        <p>النمل في المنام يدل على الضعفاء والرزق... رؤية النمل تدل على الجماعة والرزق الحلال.</p>
+                        <p>النمل في المنام يدل على الضعفاء والرزق الحلال...</p>
                         <a href="interpretations/naml.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
@@ -187,7 +171,7 @@
                     <div class="card-content">
                         <h3>رؤية البحر في المنام</h3>
                         <div class="interpreter"><i class="fas fa-user"></i> النابلسي</div>
-                        <p>البحر في المنام يدل على الملك أو العالم... رؤية البحر الهائج تدل على الفتن.</p>
+                        <p>البحر في المنام يدل على الملك أو العالم...</p>
                         <a href="interpretations/bahr.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
@@ -199,7 +183,7 @@
                     <div class="card-content">
                         <h3>رؤية الأسد في المنام</h3>
                         <div class="interpreter"><i class="fas fa-user"></i> ابن كثير</div>
-                        <p>الأسد في المنام يدل على السلطان أو العدو القوي... من رأى أنه يقاتل أسداً فإنه ينازع سلطاناً.</p>
+                        <p>الأسد في المنام يدل على السلطان أو العدو القوي...</p>
                         <a href="interpretations/asad.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
@@ -211,7 +195,7 @@
                     <div class="card-content">
                         <h3>رؤية الثعبان في المنام</h3>
                         <div class="interpreter"><i class="fas fa-user"></i> الإمام الصادق</div>
-                        <p>الثعبان في المنام يدل على العدو الكامن... رؤية قتل الثعبان تدل على النجاة من مكيدة.</p>
+                        <p>الثعبان في المنام يدل على العدو الكامن...</p>
                         <a href="interpretations/thuban.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
@@ -233,52 +217,51 @@
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=ابن+سيرين" alt="ابن سيرين">
                     <h3>ابن سيرين</h3>
-                    <p>الإمام محمد بن سيرين البصري، من كبار التابعين وأشهر المفسرين.</p>
+                    <p>الإمام محمد بن سيرين البصري، من كبار التابعين.</p>
                     <span class="interpretations-count">٥٨٠ تفسير</span>
                 </div>
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=النابلسي" alt="النابلسي">
                     <h3>عبد الغني النابلسي</h3>
-                    <p>عالم دمشقي وصوفي، له كتاب "تعطير الأنام في تعبير المنام".</p>
+                    <p>عالم دمشقي، له كتاب "تعطير الأنام".</p>
                     <span class="interpretations-count">٤٣٠ تفسير</span>
                 </div>
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=ابن+كثير" alt="ابن كثير">
                     <h3>ابن كثير</h3>
-                    <p>الحافظ عماد الدين بن كثير، صاحب التفسير المشهور.</p>
+                    <p>الحافظ عماد الدين بن كثير، صاحب التفسير.</p>
                     <span class="interpretations-count">٣٩٠ تفسير</span>
                 </div>
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=الإمام+الصادق" alt="الإمام الصادق">
                     <h3>الإمام الصادق</h3>
-                    <p>جعفر بن محمد الصادق، من أهل البيت، له إسهامات في التفسير.</p>
+                    <p>جعفر بن محمد الصادق، من أهل البيت.</p>
                     <span class="interpretations-count">٣٢٠ تفسير</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- التذييل (Footer) -->
+    <!-- التذييل -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3><i class="fas fa-moon"></i> تفسير الأحلام</h3>
-                <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين، بطريقة سهلة ومنظمة، مع تصنيفات دقيقة تساعدك على الوصول لتفسير حلمك بسرعة.</p>
+                <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين، بطريقة سهلة ومنظمة.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-section">
                 <h3>التصنيفات الرئيسية</h3>
                 <ul>
-                    <li><a href="categories/hayawanat.html"><i class="fas fa-paw"></i> الحيوانات</a></li>
-                    <li><a href="categories/tuyoor.html"><i class="fas fa-dove"></i> الطيور</a></li>
-                    <li><a href="categories/amakin.html"><i class="fas fa-map-marked-alt"></i> الأماكن</a></li>
-                    <li><a href="categories/ashkhas.html"><i class="fas fa-user-tie"></i> الأشخاص</a></li>
-                    <li><a href="categories/jamadat.html"><i class="fas fa-gem"></i> الجمادات</a></li>
+                    <li><a href="hayawanat.html"><i class="fas fa-paw"></i> الحيوانات</a></li>
+                    <li><a href="tuyoor.html"><i class="fas fa-dove"></i> الطيور</a></li>
+                    <li><a href="amakin.html"><i class="fas fa-map-marked-alt"></i> الأماكن</a></li>
+                    <li><a href="ashkhas.html"><i class="fas fa-user-tie"></i> الأشخاص</a></li>
+                    <li><a href="jamadat.html"><i class="fas fa-gem"></i> الجمادات</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -287,7 +270,6 @@
                     <li><a href="about.html">من نحن</a></li>
                     <li><a href="privacy.html">سياسة الخصوصية</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
-                    <li><a href="sitemap.html">خريطة الموقع</a></li>
                 </ul>
             </div>
         </div>
