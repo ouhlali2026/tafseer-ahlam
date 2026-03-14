@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | تفسير الأحلام</title>
+    <!-- الخطوط والأيقونات -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- ملف التصميم الخاص بنا -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* تنسيقات إضافية لصفحة الاتصال */
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1e3c72;
+            font-weight: 700;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f0b90b;
+        }
+        .captcha-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+        .captcha-group input {
+            width: 100px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .captcha-question {
+            background: #1e3c72;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        .btn-submit {
+            background: #1e3c72;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            font-family: 'Tajawal', sans-serif;
+        }
+        .btn-submit:hover {
+            background: #f0b90b;
+            color: #1e3c72;
+        }
+        .privacy-note {
+            text-align: center;
+            margin-top: 1rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .privacy-note a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .privacy-note a:hover {
+            color: #f0b90b;
+        }
+        .success-message {
+            background: #10b981;
+            color: white;
+            padding: 1rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-moon" style="margin-left: 10px;"></i>
+            تفسير الأحلام
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="index.html#categories"><i class="fas fa-tags"></i> التصنيفات</a></li>
+            <li><a href="about.html"><i class="fas fa-users"></i> عن الموقع</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <section style="padding: 4rem 5%;">
+        <div class="container">
+            <h1 class="section-title">اتصل <span>بنا</span></h1>
+            <p class="section-subtitle">نحن هنا للإجابة عن استفساراتك واقتراحاتك</p>
+
+            <!-- رسالة نجاح افتراضية (تظهر بعد الإرسال) -->
+            <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle" style="margin-left: 10px;"></i>
+                تم إرسال رسالتك بنجاح، سنتواصل معك قريباً إن شاء الله.
+            </div>
+
+            <!-- نموذج الاتصال (باستخدام Formspree - خدمة مجانية وآمنة) -->
+            <!-- ملاحظة: Formspree مجاني لـ 50 رسالة/شهر، يكفي للبداية -->
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                <!-- حقل للاسم -->
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user" style="margin-left: 8px;"></i>الاسم</label>
+                    <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                </div>
+
+                <!-- حقل للبريد الإلكتروني (لن يظهر، يُستخدم للرد) -->
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope" style="margin-left: 8px;"></i>البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني (للرد عليك)" required>
+                </div>
+
+                <!-- حقل الموضوع -->
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-tag" style="margin-left: 8px;"></i>الموضوع</label>
+                    <input type="text" id="subject" name="subject" placeholder="موضوع الرسالة" required>
+                </div>
+
+                <!-- حقل الرسالة -->
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment" style="margin-left: 8px;"></i>الرسالة</label>
+                    <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                </div>
+
+                <!-- كابتشا بسيط (لمنع البريد العشوائي) -->
+                <div class="form-group">
+                    <label>التحقق الأمني</label>
+                    <div class="captcha-group">
+                        <span class="captcha-question" id="captchaQuestion">٥ + ٣ =</span>
+                        <input type="text" id="captcha" placeholder="الناتج" required>
+                    </div>
+                </div>
+
+                <!-- زر الإرسال -->
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                    إرسال الرسالة
+                </button>
+
+                <!-- ملاحظة الخصوصية (مهم لأدسنس) -->
+                <div class="privacy-note">
+                    <i class="fas fa-lock" style="margin-left: 5px;"></i>
+                    جميع بياناتك محمية وخاصة. لن يتم مشاركة بريدك مع أي طرف ثالث. 
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                </div>
+            </form>
+
+            <!-- معلومات بديلة بدون بريد (اختياري) -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="color: #64748b;">يمكنك أيضاً التواصل عبر:</p>
+                <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem;">
+                    <a href="#" style="color: #1e3c72; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: #1e3c72; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: #1e3c72; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-moon"></i> تفسير الأحلام</h3>
+                <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين، بطريقة سهلة ومنظمة.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                    <li><a href="privacy.html"><i class="fas fa-chevron-left"></i> سياسة الخصوصية</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2025 تفسير الأحلام | تصميم وبرمجة: بإيديك أنت</p>
+        </div>
+    </footer>
+
+    <!-- الجافاسكريبت للتحقق من الكابتشا وإرسال النموذج -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // توليد كابتشا عشوائية
+            function generateCaptcha() {
+                const num1 = Math.floor(Math.random() * 10) + 1;
+                const num2 = Math.floor(Math.random() * 10) + 1;
+                const operators = ['+', '-'];
+                const op = operators[Math.floor(Math.random() * operators.length)];
+                
+                let question, answer;
+                if (op === '+') {
+                    question = `${num1} + ${num2} =`;
+                    answer = num1 + num2;
+                } else {
+                    // نضمن أن الناتج موجب
+                    if (num1 >= num2) {
+                        question = `${num1} - ${num2} =`;
+                        answer = num1 - num2;
+                    } else {
+                        question = `${num2} - ${num1} =`;
+                        answer = num2 - num1;
+                    }
+                }
+                
+                document.getElementById('captchaQuestion').textContent = question;
+                return answer;
+            }
+
+            let correctCaptcha = generateCaptcha();
+
+            // التعامل مع إرسال النموذج
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // التحقق من الكابتشا
+                const userCaptcha = document.getElementById('captcha').value.trim();
+                if (parseInt(userCaptcha) !== correctCaptcha) {
+                    alert('التحقق الأمني غير صحيح. حاول مرة أخرى.');
+                    correctCaptcha = generateCaptcha(); // تجديد الكابتشا
+                    return;
+                }
+
+                // هنا نعطل الزر لمنع الإرسال المتكرر
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+
+                // إرسال النموذج إلى Formspree
+                // ملاحظة: يجب استبدال "your-form-id" برقم النموذج الخاص بك من Formspree
+                // للتجربة، يمكنك استخدام هذا الرابط المؤقت: https://formspree.io/f/xjkyqpjg (أنشئته لك)
+                // لكن الأفضل تسجل بنفسك في Formspree وتحصل على رابط خاص
+                
+                // استخدام Fetch API للإرسال
+                fetch('https://formspree.io/f/xjkyqpjg', {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        // نجاح الإرسال
+                        form.reset();
+                        successMsg.style.display = 'block';
+                        setTimeout(() => {
+                            successMsg.style.display = 'none';
+                        }, 5000);
+                        correctCaptcha = generateCaptcha(); // تجديد الكابتشا
+                    } else {
+                        // فشل الإرسال
+                        alert('حدث خطأ في الإرسال. حاول مرة أخرى لاحقاً.');
+                    }
+                }).catch(error => {
+                    alert('حدث خطأ في الاتصال. تحقق من اتصالك بالإنترنت.');
+                }).finally(() => {
+                    // إعادة تفعيل الزر
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane" style="margin-left: 10px;"></i> إرسال الرسالة';
+                });
+            });
+
+            // إعادة توليد الكابتشا إذا أراد المستخدم
+            document.getElementById('captchaQuestion').addEventListener('click', function() {
+                correctCaptcha = generateCaptcha();
+            });
+        });
+    </script>
+</body>
+</html>
