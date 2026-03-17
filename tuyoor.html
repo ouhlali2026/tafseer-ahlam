@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تفسير الأحلام - الطيور</title>
     <!-- تحسين محركات البحث -->
-    <meta name="description" content="تفسير جميع أنواع الطيور في المنام: الحمام، النورس، الهدهد، الببغاء، الطائر الأبيض، الطائر الأسود، العصفور، الصقر، النسر، الديك، الغراب، البوم، وغيرها.">
-    <meta name="keywords" content="تفسير الطيور, رؤية الطيور في المنام, تفسير حلم الطيور, أنواع الطيور">
+    <meta name="description" content="تفسير جميع أنواع الطيور في المنام: الحمام، النورس، الهدهد، الببغاء، العصفور، الصقر، النسر، الديك، الغراب، البوم، الحدأة، الحسون، وأحوال الطيور (على الرأس، ميت، جريح، وغيرها).">
+    <meta name="keywords" content="تفسير الطيور, رؤية الطيور في المنام, تفسير حلم الطيور, أنواع الطيور, أحوال الطيور">
     <!-- الخطوط والأيقونات -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* تنسيقات خاصة بالصفحة */
         .category-header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
@@ -22,26 +23,38 @@
             border-radius: 0 0 50px 50px;
             margin-bottom: 2rem;
         }
-        .category-header h1 { font-size: 3rem; }
+        .category-header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
         .category-header h1 span { color: #f0b90b; }
         .category-header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
-        .breadcrumb { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; }
+        .breadcrumb { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; color: #ecf0f1; }
         .breadcrumb a { color: #f0b90b; text-decoration: none; }
         .section-title { width: 100%; margin: 2rem 0 1rem; font-size: 2rem; color: #1e3c72; border-bottom: 2px solid #f0b90b; padding-bottom: 0.5rem; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 0 5% 4rem; }
+        .card { background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s; border: 1px solid #e2e8f0; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(30,60,114,0.2); }
+        .card-image { height: 200px; background-size: cover; background-position: center; position: relative; }
+        .card-category { position: absolute; top: 1rem; right: 1rem; background: #f0b90b; color: #1e3c72; padding: 0.25rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; }
+        .card-content { padding: 1.5rem; }
+        .card-content h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: #1e3c72; }
+        .card-content p { color: #64748b; margin-bottom: 1rem; line-height: 1.7; }
+        .read-more { display: inline-flex; align-items: center; gap: 8px; color: #1e3c72; font-weight: 700; border-bottom: 2px solid #f0b90b; padding-bottom: 2px; transition: all 0.3s; }
+        .read-more:hover { color: #f0b90b; gap: 12px; }
+        @media (max-width: 768px) { .category-header h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
+    <!-- شريط التنقل -->
     <nav class="navbar">
-        <div class="logo"><i class="fas fa-moon"></i> تفسير الأحلام</div>
+        <div class="logo"><i class="fas fa-moon" style="margin-left: 10px;"></i> تفسير الأحلام</div>
         <ul class="nav-links">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="index.html#categories">التصنيفات</a></li>
-            <li><a href="about.html">عن الموقع</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="index.html#categories" class="active"><i class="fas fa-tags"></i> التصنيفات</a></li>
+            <li><a href="about.html"><i class="fas fa-users"></i> عن الموقع</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
         </ul>
     </nav>
 
+    <!-- رأس التصنيف -->
     <div class="category-header">
         <h1>تفسير <span>الطيور</span> في المنام</h1>
         <p>دليل شامل لتفسير جميع أنواع الطيور وأحوالها، معتمداً على أقوال كبار المفسرين</p>
@@ -50,54 +63,60 @@
         </div>
     </div>
 
+    <!-- شبكة البطاقات -->
     <section class="cards-grid">
-        <!-- الطيور الشعبية -->
+        <!-- القسم الأول: الطيور الشعبية -->
         <h2 class="section-title">الطيور الشعبية</h2>
-        
+
+        <!-- الحمام -->
         <a href="interpretations/hamam.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الحمام');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الحمام في المنام</h3>
-                <p>تفسير رؤية الحمام بأنواعه، ودلالاته للعزباء والمتزوجة.</p>
+                <p>تفسير رؤية الحمام بأنواعه، ودلالاته للعزباء والمتزوجة والحامل، عند ابن سيرين والنابلسي.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- النورس -->
         <a href="interpretations/nawras.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=النورس');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية النورس في المنام</h3>
-                <p>تفسير طائر النورس، ودلالات هجومه وصوته.</p>
+                <p>تفسير طائر النورس، ودلالات هجومه وصوته عند ابن شاهين والنابلسي.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- الهدهد -->
         <a href="interpretations/hudhud.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الهدهد');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الهدهد في المنام</h3>
-                <p>تفسير الهدهد المستوحى من قصة سليمان عليه السلام.</p>
+                <p>تفسير الهدهد المستوحى من قصة سليمان عليه السلام، ودلالات الأخبار والهداية.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- الببغاء -->
         <a href="interpretations/babgha.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الببغاء');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الببغاء في المنام</h3>
-                <p>دلالات رؤية الببغاء والنميمة والكلام.</p>
+                <p>دلالات رؤية الببغاء والنميمة والكلام عند ابن سيرين والنابلسي.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- العصفور -->
         <a href="interpretations/asfoor.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=العصفور');">
                 <span class="card-category">الطيور</span>
@@ -109,6 +128,7 @@
             </div>
         </a>
 
+        <!-- الصقر -->
         <a href="interpretations/saqr.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الصقر');">
                 <span class="card-category">الطيور</span>
@@ -120,17 +140,19 @@
             </div>
         </a>
 
+        <!-- النسر -->
         <a href="interpretations/nasr.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=النسر');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية النسر في المنام</h3>
-                <p>تفسير النسر ودلالات العزة والرفعة.</p>
+                <p>تفسير النسر ودلالات العزة والرفعة عند ابن سيرين والنابلسي.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- الديك -->
         <a href="interpretations/deek.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الديك');">
                 <span class="card-category">الطيور</span>
@@ -142,28 +164,31 @@
             </div>
         </a>
 
+        <!-- الغراب -->
         <a href="interpretations/ghurab.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الغراب');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الغراب في المنام</h3>
-                <p>تفسير الغراب ودلالات الفراق والعدو.</p>
+                <p>تفسير الغراب ودلالات الفراق والعدو والنعيق.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- البوم -->
         <a href="interpretations/boom.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=البوم');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية البوم في المنام</h3>
-                <p>تفسير البوم ودلالات التحذير والعزلة.</p>
+                <p>تفسير البوم ودلالات التحذير والعزلة والخراب.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- الحدأة -->
         <a href="interpretations/hadaa.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الحدأة');">
                 <span class="card-category">الطيور</span>
@@ -175,114 +200,139 @@
             </div>
         </a>
 
+        <!-- الحسون -->
         <a href="interpretations/hassoun.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الحسون');">
                 <span class="card-category">الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الحسون في المنام</h3>
-                <p>تفسير الحسون ودلالات الجمال والصوت العذب.</p>
+                <p>تفسير الحسون ودلالات الجمال والصوت العذب والألوان الزاهية.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
-        <!-- أحوال الطيور -->
+        <!-- القسم الثاني: أحوال الطيور -->
         <h2 class="section-title">أحوال الطيور</h2>
 
+        <!-- الطائر الأبيض -->
         <a href="interpretations/tayr-abyad.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=طائر+أبيض');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الطائر الأبيض</h3>
-                <p>دلالات الطائر الأبيض للخير والبشارة.</p>
+                <p>دلالات الطائر الأبيض للخير والبشارة والملائكة والأعمال الصالحة.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- الطائر الأسود -->
         <a href="interpretations/tayr-aswad.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=طائر+أسود');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>رؤية الطائر الأسود</h3>
-                <p>دلالات الطائر الأسود للتحذير والعدو.</p>
+                <p>دلالات الطائر الأسود للتحذير والعدو والهم.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- طائر أسود كبير -->
         <a href="interpretations/tayr-aswad-kabeer.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=أسود+كبير');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>طائر أسود كبير</h3>
-                <p>تفسير الطائر الأسود الكبير للعزباء والمتزوجة.</p>
+                <p>تفسير الطائر الأسود الكبير للعزباء والمتزوجة والحامل والرجل.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- طائر غريب -->
         <a href="interpretations/tayr-ghareeb.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=طائر+غريب');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>طائر غريب في المنام</h3>
-                <p>دلالات رؤية طائر غير مألوف للمتزوجة والعزباء.</p>
+                <p>دلالات رؤية طائر غير مألوف للمتزوجة والعزباء والرجل.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- طائر كبير -->
         <a href="interpretations/tayr-kabeer.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=طائر+كبير');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>طائر كبير في المنام</h3>
-                <p>تفسير رؤية الطائر الكبير ودلالاته.</p>
+                <p>تفسير رؤية الطائر الكبير ودلالاته للأمور العظيمة.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- طائر صغير -->
         <a href="interpretations/tayr-sagheer.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=طائر+صغير');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>طائر صغير في المنام</h3>
-                <p>تفسير الطائر الصغير ودلالاته للأطفال والبدايات.</p>
+                <p>تفسير الطائر الصغير ودلالاته للأطفال والبدايات الجديدة.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- طائر ملون -->
         <a href="interpretations/tayr-mulawwan.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=طائر+ملون');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>طائر ملون في المنام</h3>
-                <p>دلالات ألوان الطيور المختلفة.</p>
+                <p>دلالات ألوان الطيور المختلفة: الأخضر، الأحمر، الأصفر، الأزرق.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
 
+        <!-- أحوال الطيور العامة -->
         <a href="interpretations/ahwal-at-tuyoor.html" class="card">
             <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=أحوال+الطيور');">
                 <span class="card-category">أحوال الطيور</span>
             </div>
             <div class="card-content">
                 <h3>أحوال الطيور العامة</h3>
-                <p>تفسير شامل لكل أحوال الطيور (على الرأس، ميت، يطير...).</p>
+                <p>تفسير جميع أحوال الطيور: على الرأس، ميت، جريح، في القفص، يهاجم، يتكلم، وأكثر.</p>
                 <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
             </div>
         </a>
     </section>
 
+    <!-- التذييل -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3><i class="fas fa-moon"></i> تفسير الأحلام</h3>
                 <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين، بطريقة سهلة ومنظمة.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>التصنيفات الرئيسية</h3>
+                <ul>
+                    <li><a href="hayawanat.html"><i class="fas fa-paw"></i> الحيوانات</a></li>
+                    <li><a href="tuyoor.html"><i class="fas fa-dove"></i> الطيور</a></li>
+                    <li><a href="amakin.html"><i class="fas fa-map-marked-alt"></i> الأماكن</a></li>
+                    <li><a href="ashkhas.html"><i class="fas fa-user-tie"></i> الأشخاص</a></li>
+                    <li><a href="jamadat.html"><i class="fas fa-gem"></i> الجمادات</a></li>
+                </ul>
             </div>
             <div class="footer-section">
                 <h3>روابط مهمة</h3>
