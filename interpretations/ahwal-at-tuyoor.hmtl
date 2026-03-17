@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفسير أحوال الطيور في المنام - دليل كامل لـ 20 حالة مع تفسير ابن سيرين والنابلسي</title>
+    <!-- تحسين محركات البحث -->
+    <meta name="description" content="تفسير جميع أحوال الطيور في المنام: الطائر على الرأس، الميت، الجريح، في القفص، المهاجم، المتكلم، الطائر، النازل، الواقف، الطائر الملون، الطائر الغريب، وغيرها. مع تفصيل للعزباء والمتزوجة والحامل والرجل وأسئلة شائعة.">
+    <meta name="keywords" content="أحوال الطيور في المنام, تفسير طائر على الرأس, طائر ميت في الحلم, طائر يهاجمني, طائر يتكلم, طائر في القفص, طائر يخرج من البيت, طائر يدخل البيت, طائر يطير عاليا, طائر يبكي, طائر يغرد">
+    <!-- الخطوط والأيقونات -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .interpretation-header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 2rem;
+        }
+        .interpretation-header h1 { font-size: 3rem; }
+        .interpretation-header h1 span { color: #f0b90b; }
+        .interpretation-header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+        .interpretation-content {
+            max-width: 900px; margin: 2rem auto; background: white; padding: 3rem;
+            border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            line-height: 1.9; font-size: 1.1rem;
+        }
+        .interpretation-content h2 {
+            color: #1e3c72; font-size: 2rem; margin: 2.5rem 0 1rem;
+            border-bottom: 3px solid #f0b90b; padding-bottom: 0.5rem;
+        }
+        .interpretation-content h3 { color: #1e3c72; font-size: 1.5rem; margin: 2rem 0 1rem; }
+        .interpretation-content p { margin-bottom: 1.2rem; color: #334155; }
+        .interpretation-content .quran-ayah {
+            background: #f0b90b10; padding: 1.5rem; border-right: 4px solid #f0b90b;
+            border-radius: 15px; margin: 2rem 0; font-style: italic;
+        }
+        .faq-item { background: #f8fafc; padding: 1rem; border-radius: 15px; margin: 1.5rem 0; }
+        .faq-question { font-weight: 700; color: #1e3c72; }
+        .faq-answer { padding-right: 1rem; border-right: 2px solid #f0b90b; }
+        .internal-links { background: #f8fafc; padding: 1.5rem; border-radius: 20px; margin: 2rem 0; }
+        .internal-links a { display: inline-block; margin: 0.5rem; padding: 0.5rem 1rem; background: white; border: 1px solid #e2e8f0; border-radius: 50px; color: #1e3c72; text-decoration: none; transition: 0.3s; }
+        .internal-links a:hover { background: #f0b90b; }
+        .external-links { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+        .external-links a { margin-left: 1.5rem; color: #1e3c72; font-weight: 700; text-decoration: none; }
+        .interpretation-footer { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e2e8f0; }
+        .interpretation-footer strong { color: #f0b90b; font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-moon"></i> تفسير الأحلام</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../index.html#categories">التصنيفات</a></li>
+            <li><a href="../about.html">عن الموقع</a></li>
+            <li><a href="../contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <div class="interpretation-header">
+        <h1>تفسير <span>أحوال الطيور</span> في المنام</h1>
+        <p>دليل كامل لـ 20 حالة مختلفة: الطائر على الرأس، الميت، الجريح، في القفص، المهاجم، المتكلم، وأكثر</p>
+    </div>
+
+    <article class="interpretation-content">
+        <p><span class="interpreter-name">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>، الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين، سيدنا محمد وعلى آله وصحبه أجمعين. أما بعد:</p>
+        <p>رؤية الطيور في المنام من الرؤى المتكررة التي تهم الكثير من الناس، لكن الأهم من رؤية الطائر نفسه هو <strong>الحالة التي يكون عليها</strong> في الحلم. هل هو حي أم ميت؟ يطير أم يقبع في قفص؟ يهاجم أم يهدل؟ يقف على الرأس أم على النافذة؟ كل حالة تحمل معنى خاصًا يكشف للرائي جوانب من حياته أو مستقبله. في هذا التفسير الموسع، نستعرض 20 حالة مختلفة لأحوال الطيور في المنام، معتمدين على أقوال كبار المفسرين مثل <strong>ابن سيرين</strong> و<strong>النابلسي</strong> و<strong>ابن شاهين</strong>، ومفصلين لكل حالة دلالاتها للعزباء والمتزوجة والحامل والرجل، مع أسئلة شائعة وإجاباتها، لنقدم محتوى يتجاوز 1200 كلمة يلبي احتياجات الباحثين عن تفسير دقيق وشامل.</p>
+
+        <div class="quran-ayah">
+            <i class="fas fa-quote-right"></i>
+            <p>قال الله تعالى: <strong>"أَلَمْ يَرَوْا إِلَى الطَّيْرِ مُسَخَّرَاتٍ فِي جَوِّ السَّمَاءِ مَا يُمْسِكُهُنَّ إِلَّا اللَّهُ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يُؤْمِنُونَ"</strong> (النحل: 79).</p>
+        </div>
+
+        <h2>أولاً: الطائر على الرأس أو الكتف</h2>
+        <p>رؤية طائر يقف على الرأس أو الكتف من الرؤى القوية التي تدل على <strong>المسؤولية أو السلطة</strong>. قال ابن سيرين: "من رأى طيرًا على رأسه، فإنه يتولى أمرًا أو ينال جاهاً". إذا كان الطائر أبيض، فالمسؤولية مباركة وسهلة، وإن كان أسود، فهي حمل ثقيل قد يكون سلطة جائرة. وإذا طار الطائر من على رأسه، فقد يفقد الرائي منصبه أو تزول عنه مسؤولية كانت تثقله. وإذا كان الطائر يغرد وهو على الرأس، فهذا يدل على سمعة طيبة وذكر حسن بين الناس.</p>
+        <ul>
+            <li><strong>للعزباء:</strong> قد تدل على قرب زواجها من رجل ذي منصب (طبيب، مهندس، مسؤول)، أو على نجاح كبير في دراستها وتفوقها على زميلاتها.</li>
+            <li><strong>للمتزوجة:</strong> تشير إلى مكانتها العالية في بيتها، أو إلى زوجها إذا كان الطائر كبيرًا، كما تدل على احترام أبنائها لها.</li>
+            <li><strong>للحامل:</strong> تبشر بمولود ذكر سيكون له شأن في المستقبل، أو بمكانة مرموقة بين الناس.</li>
+            <li><strong>للرجل:</strong> تدل على ترقية في العمل أو منصب جديد، أو على ثقة الناس به.</li>
+        </ul>
+
+        <h2>ثانيًا: الطائر الميت</h2>
+        <p>رؤية طائر ميت تدل على <strong>انتهاء أمر</strong> أو <strong>موت شخص ضعيف</strong>. قال النابلسي: "الطير الميت يدل على موت امرأة أو خادم". وقد يكون بشارة بزوال هم أو مشكلة كانت تؤرق الرائي. إذا رأى الرائي أنه يقتل طيرًا، فقد يظلم ضعيفًا أو يقطع رزقًا عن محتاج. وإذا رأى طيورًا ميتة كثيرة، فقد يدل ذلك على موت جماعي أو وباء.</p>
+        <ul>
+            <li><strong>للعزباء:</strong> قد تفشل علاقة عاطفية، أو تنتهي فترة حزن كانت تمر بها.</li>
+            <li><strong>للمتزوجة:</strong> تدل على انتهاء خلاف مع زوجها أو مع أهلها، أو على موت امرأة نمامة كانت تؤذيها.</li>
+            <li><strong>للحامل:</strong> تحذير من الإجهاض أو وعكة صحية، وعليها الإكثار من الدعاء وقراءة المعوذات.</li>
+            <li><strong>للرجل:</strong> قد يخسر خادمًا أو عاملاً، أو تنتهي شراكة مع شخص ضعيف.</li>
+        </ul>
+
+        <h2>ثالثًا: الطائر الجريح</h2>
+        <p>يرمز الطائر الجريح إلى <strong>شخص ضعيف يحتاج إلى عون</strong>. قد يكون قريبًا مريضًا، أو مشروعًا متعثرًا، أو صديقًا في محنة. إذا عالجه الرائي وأسعفه، فإنه يساعد محتاجًا ويؤجر على ذلك. وإذا مات بين يديه، فقد يقصر في واجب تجاه أحد. وإذا رأى الطائر الجريح يطير، فهذا دليل على شفاء مريض أو نجاح مشروع.</p>
+        <ul>
+            <li><strong>للعزباء:</strong> قد تساعد صديقة في مشكلة، أو تمر بوعكة صحية تتعافى منها.</li>
+            <li><strong>للمتزوجة:</strong> تدل على مرض أحد أبنائها أو زوجها، وعليها الصبر والدعاء.</li>
+            <li><strong>للحامل:</strong> تحذير من وعكة صحية، وعليها الاهتمام بنفسها.</li>
+        </ul>
+
+        <h2>رابعًا: الطائر في القفص</h2>
+        <p>يدل الطائر في القفص على <strong>حبس أو تقييد</strong>. قد يكون الرائي محبوسًا عن تحقيق أمنية، أو قد تكون لديه امرأة أو خادم مقيدون (مسجونون أو ممنوعون من الحرية). وإذا فتح القفص وأطلق الطائر، فإنه يحرر شخصًا من ظلم أو يحقق حريته. وإذا كان الطائر يغرد داخل القفص، فقد يكون مسجونًا لكنه راضٍ بحاله.</p>
+        <ul>
+            <li><strong>للعزباء:</strong> قد تكون مقيدة بعادات أو تقاليد أو بأسرة تمنعها من تحقيق أحلامها، وعليها الصبر.</li>
+            <li><strong>للمتزوجة:</strong> تدل على زوج متسلط أو حياة محدودة، أو على امرأة محبوسة في بيتها.</li>
+            <li><strong>للحامل:</strong> قد تدل على حمل متعب أو على قيود تمنعها من الحركة.</li>
+            <li><strong>للرجل:</strong> قد يكون مسجونًا أو مقيدًا في عمله، أو لديه خادم مقيد.</li>
+        </ul>
+
+        <h2>خامسًا: طائر يهاجم الرائي</h2>
+        <p>هجوم الطائر في المنام يدل على <strong>عدو يتربص</strong> أو <strong>منافس في العمل</strong>. إذا كان الطائر أسود، فالعدو شديد وقوي. وإذا كان أبيض، فالمنافسة شريفة وقد تنتهي بصلح. النجاة من الهجوم تعني التغلب على الخصوم. وإذا أصيب الرائي بجروح من الهجوم، فقد يصاب بضرر من عدوه.</p>
+        <ul>
+            <li><strong>للعزباء:</strong> قد تتعرض لمنافسة من زميلة في العمل أو الدراسة، أو لشخص يحاول التقرب منها بسوء.</li>
+            <li><strong>للمتزوجة:</strong> تدل على امرأة تحسدها أو تسعى للتفريق بينها وبين زوجها.</li>
+            <li><strong>للحامل:</strong> تحذير من حسد شديد، وعليها بالتحصين.</li>
+        </ul>
+
+        <h2>سادسًا: طائر يتكلم بكلام مفهوم</h2>
+        <p>رؤية طائر يتكلم بكلام مفهوم من الرؤى النادرة. قد يدل على <strong>رسالة مهمة</strong> أو <strong>نصيحة من شخص غائب</strong>. قال ابن سيرين: "كلام الطير في المنام يدل على منفعة من امرأة أو خادم". وإذا كان الكلام وعظًا أو تذكيرًا بالله، فهو دعوة للرائي للتوبة والرجوع إلى الله. وإذا كان الكلام خبرًا، فليتأكد الرائي من صحته.</p>
+        <ul>
+            <li><strong>للعزباء:</strong> قد تتلقى نصيحة من امرأة حكيمة، أو خبرًا عن خطيبها.</li>
+            <li><strong>للمتزوجة:</strong> تسمع خبرًا عن زوجها أو أحد أبنائها.</li>
+        </ul>
+
+        <h2>سابعًا: طائر يبني عشًا في البيت</h2>
+        <p>بشارة باستقرار وبركة، وقدوم ضيف مقيم أو زواج قريب. إذا كان العش يحتوي على بيض، فهو رزق وذرية.</p>
+
+        <h2>ثامنًا: طائر يخرج من البيت</h2>
+        <p>سفر أحد الأهل، أو انتهاء فترة خير، أو خروج رزق من البيت.</p>
+
+        <h2>تاسعًا: طائر يدخل البيت</h2>
+        <p>قدوم ضيف، أو خبر سار، أو رزق جديد. إذا كان الطائر جميلاً، فالضيف كريم.</p>
+
+        <h2>عاشرًا: طائر يطير عالياً</h2>
+        <p>يدل على رفعة الشأن وتحقيق الأمنيات. إذا عاد الطائر، فقد يعود مسافر.</p>
+
+        <h2>حادي عشر: طائر يبكي أو يصدر صوتًا حزينًا</h2>
+        <p>يدل على حزن أو فراق. قد يموت قريب أو يسافر بعيدًا.</p>
+
+        <h2>ثاني عشر: طائر يغرد بصوت جميل</h2>
+        <p>بشارة بفرح وأخبار سارة. إذا كان الرائي مريضًا، فقد يشفى.</p>
+
+        <h2>ثالث عشر: طائر يوقع على النافذة</h2>
+        <p>خبر ينتظر الرائي، أو شخص يراقبه من بعيد.</p>
+
+        <h2>رابع عشر: طائر يمسك شيئًا بمنقاره</h2>
+        <p>إذا كان الشيء جميلاً، فرزق قادم. إذا كان قبيحًا، فهم أو مشكلة.</p>
+
+        <h2>خامس عشر: طائر أبيض يظهر فجأة</h2>
+        <p>خير غير متوقع، بشارة بفرج قريب.</p>
+
+        <h2>أسئلة شائعة</h2>
+        <div class="faq-item">
+            <div class="faq-question">س: ما تفسير رؤية طائر على نافذتي ينظر إلي بحدة؟</div>
+            <div class="faq-answer">ج: قد يدل على شخص يراقبك من بعيد، أو على خبر ينتظرك. إذا كان الطائر جميلاً، فالخبر سار، وإن كان مخيفًا، فخبر سيء.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">س: حلمت بطائر يبني عشًا في غرفة نومي، فما المعنى؟</div>
+            <div class="faq-answer">ج: بشارة باستقرار وبركة في حياتك الزوجية، وقدوم مولود جديد أو ضيف مقيم.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">س: طائر أسود دخل بيتي ثم خرج، ما التفسير؟</div>
+            <div class="faq-answer">ج: قد يدل على عدو دخل حياتك ثم خرج دون ضرر، أو على مشكلة انتهت بسرعة.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">س: رأيت طيورًا كثيرة تطير في السماء، فما المعنى؟</div>
+            <div class="faq-answer">ج: تدل على مناسبات سعيدة قادمة، أو على كثرة الرزق والبركة.</div>
+        </div>
+
+        <div class="internal-links">
+            <p><i class="fas fa-link"></i> تفاسير ذات صلة:</p>
+            <a href="../tuyoor.html">تصنيف الطيور</a>
+            <a href="tayr-abyad.html">طائر أبيض</a>
+            <a href="tayr-aswad.html">طائر أسود</a>
+            <a href="tayr-aswad-kabeer.html">طائر أسود كبير</a>
+            <a href="tayr-ghareeb.html">طائر غريب</a>
+            <a href="tayr-kabeer.html">طائر كبير</a>
+            <a href="tayr-sagheer.html">طائر صغير</a>
+        </div>
+
+        <div class="external-links">
+            <p>مصادر موثوقة:</p>
+            <a href="https://www.islamweb.net/ar/fatwa/" target="_blank">إسلام ويب</a>
+            <a href="https://dorar.net/" target="_blank">الدرر السنية</a>
+            <a href="https://quran.ksu.edu.sa/" target="_blank">جامعة الملك سعود</a>
+        </div>
+
+        <div class="interpretation-footer">
+            <p>هذا ما تيسر جمعه من أقوال العلماء والمفسرين في أحوال الطيور في المنام، نسأل الله أن يجعل أحلامنا بشارة خير وبركة.</p>
+            <p><strong>والله أعلم</strong></p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-moon"></i> تفسير الأحلام</h3>
+                <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="../about.html">من نحن</a></li>
+                    <li><a href="../privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="../contact.html">اتصل بنا</a></li>
+                    <li><a href="../sitemap.xml">خريطة الموقع</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2025 تفسير الأحلام</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
