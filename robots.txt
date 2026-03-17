@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tafseer-ahlam.vercel.app/sitemap.xml
