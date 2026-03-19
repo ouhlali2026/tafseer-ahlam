@@ -3,60 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- تحسينات SEO الأساسية -->
     <title>تفسير الأحلام | دليل تفسير الأحلام الشامل من كبار المفسرين</title>
-    <meta name="description" content="موقع تفسير الأحلام يقدم تفسيرات دقيقة وموثوقة لأحلامك من كبار المفسرين: ابن سيرين، النابلسي، ابن كثير، الإمام الصادق. ابحث عن حلمك بالكلمة المفتاحية أو تصفح التصنيفات.">
-    <meta name="keywords" content="تفسير الأحلام, تفسير حلم, ابن سيرين, النابلسي, ابن كثير, رؤيا, منام, تفسير رؤية">
+    <!-- SEO -->
+    <meta name="description" content="تفسير الأحلام بدقة وموثوقية من كبار المفسرين: ابن سيرين، النابلسي، ابن كثير، الإمام الصادق. ابحث عن حلمك بالكلمة المفتاحية أو تصفح التصنيفات.">
+    <meta name="keywords" content="تفسير الأحلام, تفسير حلم, ابن سيرين, النابلسي, ابن كثير, رؤيا, منام">
     <meta name="author" content="تفسير الأحلام">
-    
-    <!-- السماح لمحركات البحث بفهرسة الموقع ومتابعة الروابط -->
     <meta name="robots" content="index, follow">
-    
-    <!-- الرابط الأساسي (canonical) لتجنب المحتوى المكرر -->
     <link rel="canonical" href="https://tafseer-ahlam.vercel.app/">
-    
-    <!-- ربط خريطة الموقع (اختياري لكن مفيد) -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://tafseer-ahlam.vercel.app/sitemap.xml">
-    
-    <!-- Open Graph لتحسين المشاركة على فيسبوك وواتساب -->
+    <!-- Open Graph -->
     <meta property="og:title" content="تفسير الأحلام - دليل تفسير الأحلام الشامل">
-    <meta property="og:description" content="تفسير أحلامك بدقة من كبار المفسرين: ابن سيرين، النابلسي، ابن كثير، الإمام الصادق. ابحث وتصفح التصنيفات بسهولة.">
+    <meta property="og:description" content="تفسير أحلامك بدقة من كبار المفسرين.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tafseer-ahlam.vercel.app/">
     <meta property="og:image" content="https://tafseer-ahlam.vercel.app/og-image.jpg">
     <meta property="og:site_name" content="تفسير الأحلام">
-    <meta property="og:locale" content="ar_AR">
-    
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="تفسير الأحلام - دليل تفسير الأحلام الشامل">
-    <meta name="twitter:description" content="تفسير أحلامك بدقة من كبار المفسرين: ابن سيرين، النابلسي، ابن كثير، الإمام الصادق.">
+    <meta name="twitter:description" content="تفسير أحلامك بدقة من كبار المفسرين.">
     <meta name="twitter:image" content="https://tafseer-ahlam.vercel.app/og-image.jpg">
-    
-    <!-- الخطوط والأيقونات -->
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- ملف التصميم -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- أيقونة الموقع (Favicon) – يفضل إضافتها لاحقاً -->
-    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
 </head>
 <body>
     <!-- شريط التنقل -->
     <nav class="navbar">
         <div class="logo">
-            <i class="fas fa-moon" style="margin-left: 10px;"></i>
-            تفسير الأحلام
+            <i class="fas fa-moon"></i>
+            <span>تفسير الأحلام</span>
         </div>
-        <ul class="nav-links">
+        <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
             <li><a href="#categories"><i class="fas fa-tags"></i> التصنيفات</a></li>
-            <li><a href="about.html"><i class="fas fa-users"></i> عن الموقع</a></li>
+            <li><a href="#interpreters"><i class="fas fa-users"></i> المفسرون</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> عن الموقع</a></li>
             <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
         </ul>
     </nav>
@@ -66,14 +54,10 @@
         <div class="hero-content">
             <h1>اكتشف تفسير أحلامك <span>بدقة وموثوقية</span></h1>
             <p>أكبر مجموعة من تفسيرات الأحلام لكبار المفسرين: ابن سيرين، النابلسي، ابن كثير، الإمام الصادق</p>
-            
-            <!-- شريط البحث المتقدم -->
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="ابحث عن حلمك... (مثال: نمل، بحر، أسد)">
                 <button id="search-btn"><i class="fas fa-search"></i> ابحث</button>
             </div>
-
-            <!-- الإحصائيات -->
             <div class="stats-container">
                 <div class="stat-item">
                     <span class="stat-number" data-target="2500">0</span>
@@ -95,14 +79,12 @@
         </div>
     </header>
 
-    <!-- قسم التصنيفات الرئيسية -->
+    <!-- قسم التصنيفات -->
     <section class="categories-section" id="categories">
         <div class="container">
             <h2 class="section-title">تصفح الأحلام <span>بالتصنيفات</span></h2>
             <p class="section-subtitle">اختر التصنيف الذي تبحث عنه لتجد تفسير حلمك بسهولة</p>
-            
             <div class="categories-grid">
-                <!-- الحيوانات -->
                 <a href="hayawanat.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-paw"></i></div>
                     <h3>الحيوانات</h3>
@@ -110,8 +92,6 @@
                     <span class="category-count">١٤٢ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- الطيور -->
                 <a href="tuyoor.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-dove"></i></div>
                     <h3>الطيور</h3>
@@ -119,8 +99,6 @@
                     <span class="category-count">٩٨ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- الأماكن -->
                 <a href="amakin.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-map-marked-alt"></i></div>
                     <h3>الأماكن</h3>
@@ -128,8 +106,6 @@
                     <span class="category-count">٢١٥ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- الأشخاص -->
                 <a href="ashkhas.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-user-tie"></i></div>
                     <h3>الأشخاص</h3>
@@ -137,8 +113,6 @@
                     <span class="category-count">١٦٧ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- الجمادات -->
                 <a href="jamadat.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-gem"></i></div>
                     <h3>الجمادات</h3>
@@ -146,8 +120,6 @@
                     <span class="category-count">٨٦ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- المأكولات -->
                 <a href="makoolat.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-utensils"></i></div>
                     <h3>المأكولات</h3>
@@ -155,8 +127,6 @@
                     <span class="category-count">١٢٣ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- الملابس -->
                 <a href="malabis.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-tshirt"></i></div>
                     <h3>الملابس</h3>
@@ -164,8 +134,6 @@
                     <span class="category-count">٧٩ تفسير</span>
                     <span class="category-link">استكشف <i class="fas fa-arrow-left"></i></span>
                 </a>
-                
-                <!-- الظواهر الطبيعية -->
                 <a href="zawahir.html" class="category-card">
                     <div class="category-icon"><i class="fas fa-cloud-sun"></i></div>
                     <h3>الظواهر الطبيعية</h3>
@@ -177,14 +145,12 @@
         </div>
     </section>
 
-    <!-- قسم أحدث التفسيرات -->
+    <!-- أحدث التفسيرات (من المحتوى الفعلي) -->
     <section class="latest-interpretations">
         <div class="container">
             <h2 class="section-title">أحدث <span>التفسيرات</span></h2>
             <p class="section-subtitle">أحدث الأحلام المضافة إلى المكتبة</p>
-            
             <div class="cards-grid">
-                <!-- بطاقة من تفسير الطيور (tayr-am.html) -->
                 <div class="card">
                     <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الطيور')">
                         <span class="card-category">الطيور</span>
@@ -196,7 +162,6 @@
                         <a href="interpretations/tayr-am.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
-                <!-- بطاقة من تفسير الحيوانات (naml.html) -->
                 <div class="card">
                     <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=النمل')">
                         <span class="card-category">الحيوانات</span>
@@ -208,7 +173,6 @@
                         <a href="interpretations/naml.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
-                <!-- بطاقة إضافية من الحيوانات -->
                 <div class="card">
                     <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الأسد')">
                         <span class="card-category">الحيوانات</span>
@@ -220,7 +184,6 @@
                         <a href="interpretations/asad.html" class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></a>
                     </div>
                 </div>
-                <!-- بطاقة من الطيور (اخرى) -->
                 <div class="card">
                     <div class="card-image" style="background-image: url('https://placehold.co/600x400/1e3c72/f0b90b?text=الحمام')">
                         <span class="card-category">الطيور</span>
@@ -233,58 +196,61 @@
                     </div>
                 </div>
             </div>
-            
             <div class="center-btn">
                 <a href="all-interpretations.html" class="btn-secondary">عرض جميع التفسيرات <i class="fas fa-arrow-left"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- قسم المفسرين البارزين -->
-    <section class="interpreters-section">
+    <!-- قسم المفسرين مع وصف كامل -->
+    <section class="interpreters-section" id="interpreters">
         <div class="container">
             <h2 class="section-title">كبار <span>المفسرين</span></h2>
-            <p class="section-subtitle">تعرف على أبرز علماء تفسير الأحلام</p>
-            
+            <p class="section-subtitle">تعرف على أبرز علماء تفسير الأحلام عبر التاريخ</p>
             <div class="interpreters-grid">
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=ابن+سيرين" alt="ابن سيرين">
-                    <h3>ابن سيرين</h3>
-                    <p>الإمام محمد بن سيرين البصري، من كبار التابعين.</p>
+                    <h3>الإمام محمد بن سيرين</h3>
+                    <p class="interpreter-bio">(33 - 110 هـ) تابعي جليل، وأحد كبار علماء التفسير والحديث. اشتهر بتفسير الأحلام حتى صار علماً عليها. كتابه "تفسير الأحلام" هو من أشهر الكتب في هذا المجال.</p>
                     <span class="interpretations-count">٥٨٠ تفسير</span>
+                    <a href="interpreters/ibn-sirin.html" class="interpreter-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                 </div>
                 <div class="interpreter-card">
-                    <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=النابلسي" alt="النابلسي">
+                    <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=النابلسي" alt="عبد الغني النابلسي">
                     <h3>عبد الغني النابلسي</h3>
-                    <p>عالم دمشقي، له كتاب "تعطير الأنام".</p>
+                    <p class="interpreter-bio">(1050 - 1143 هـ) عالم دمشقي صوفي، من كبار المفسرين في القرن الثاني عشر الهجري. له كتاب "تعطير الأنام في تعبير المنام" الذي يعد من أهم المراجع في تفسير الأحلام.</p>
                     <span class="interpretations-count">٤٣٠ تفسير</span>
+                    <a href="interpreters/al-nabulsi.html" class="interpreter-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                 </div>
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=ابن+كثير" alt="ابن كثير">
-                    <h3>ابن كثير</h3>
-                    <p>الحافظ عماد الدين بن كثير، صاحب التفسير.</p>
+                    <h3>الحافظ ابن كثير</h3>
+                    <p class="interpreter-bio">(701 - 774 هـ) مؤرخ ومفسر دمشقي، صاحب "تفسير القرآن العظيم". له إسهامات كبيرة في تفسير الأحلام من خلال كتبه وموسوعاته.</p>
                     <span class="interpretations-count">٣٩٠ تفسير</span>
+                    <a href="interpreters/ibn-katheer.html" class="interpreter-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                 </div>
                 <div class="interpreter-card">
                     <img src="https://placehold.co/150x150/1e3c72/f0b90b?text=الإمام+الصادق" alt="الإمام الصادق">
-                    <h3>الإمام الصادق</h3>
-                    <p>جعفر بن محمد الصادق، من أهل البيت.</p>
+                    <h3>الإمام جعفر الصادق</h3>
+                    <p class="interpreter-bio">(80 - 148 هـ) الإمام السادس من أئمة أهل البيت، عالم جليل في العلوم الدينية، له إسهامات في تفسير الأحلام من خلال المأثور عنه.</p>
                     <span class="interpretations-count">٣٢٠ تفسير</span>
+                    <a href="interpreters/imam-sadiq.html" class="interpreter-link">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- التذييل -->
+    <!-- التذييل (Footer) -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3><i class="fas fa-moon"></i> تفسير الأحلام</h3>
                 <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين، بطريقة سهلة ومنظمة.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -312,7 +278,7 @@
         </div>
     </footer>
 
-    <!-- ربط ملف الجافاسكريبت -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
