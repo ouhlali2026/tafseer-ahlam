@@ -1,4 +1,6 @@
-/* reset.css بسيط */
+/* ============================================
+   reset.css - إعادة ضبط المتصفحات
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body {
     background-color: #f9fafc;
     color: #1e293b;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -18,7 +21,9 @@ body {
     padding: 0 20px;
 }
 
-/* شريط التنقل */
+/* ============================================
+   شريط التنقل
+   ============================================ */
 .navbar {
     background-color: #1e3c72;
     padding: 0.8rem 5%;
@@ -29,15 +34,16 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: #f0b90b;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
 }
 
 .logo i {
@@ -51,24 +57,30 @@ body {
     color: white;
     font-size: 1.8rem;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .nav-links a {
     color: #ecf0f1;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 1rem;
     border-radius: 50px;
     transition: all 0.3s;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     font-size: 0.95rem;
 }
 
@@ -78,11 +90,13 @@ body {
     color: #1e3c72;
 }
 
-/* القسم العلوي (Hero) - مصغر */
+/* ============================================
+   القسم العلوي (Hero)
+   ============================================ */
 .hero {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: white;
-    padding: 2rem 5%;
+    padding: 3rem 5%;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -112,39 +126,45 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
     line-height: 1.3;
 }
 
 .hero h1 span {
     color: #f0b90b;
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .hero p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+    opacity: 0.95;
 }
 
 /* شريط البحث */
 .search-container {
     display: flex;
     max-width: 500px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1.8rem;
     gap: 0.5rem;
 }
 
 #search-input {
     flex: 1;
-    padding: 0.8rem 1.2rem;
+    padding: 0.9rem 1.2rem;
     border: none;
     border-radius: 50px;
     font-size: 1rem;
     font-family: 'Tajawal', sans-serif;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+#search-input:focus {
+    outline: 2px solid #f0b90b;
+    transform: scale(1.02);
 }
 
 #search-btn {
@@ -160,7 +180,7 @@ body {
     font-family: 'Tajawal', sans-serif;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
 }
 
 #search-btn:hover {
@@ -168,7 +188,7 @@ body {
     transform: scale(1.02);
 }
 
-/* الإحصائيات - مصغرة */
+/* الإحصائيات */
 .stats-container {
     display: flex;
     justify-content: center;
@@ -181,7 +201,7 @@ body {
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(4px);
     padding: 0.8rem 1.2rem;
-    border-radius: 15px;
+    border-radius: 20px;
     min-width: 100px;
     text-align: center;
     border: 1px solid rgba(255,255,255,0.2);
@@ -200,10 +220,12 @@ body {
     opacity: 0.9;
 }
 
-/* عناوين الأقسام */
+/* ============================================
+   عناوين الأقسام
+   ============================================ */
 .section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #1e3c72;
     margin-bottom: 0.5rem;
 }
@@ -216,12 +238,14 @@ body {
     text-align: center;
     font-size: 1rem;
     color: #64748b;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
-/* التصنيفات */
+/* ============================================
+   شبكة التصنيفات
+   ============================================ */
 .categories-section {
-    padding: 2.5rem 5%;
+    padding: 3rem 5%;
     background-color: white;
 }
 
@@ -233,7 +257,7 @@ body {
 
 .category-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 1.5rem 1rem;
     text-decoration: none;
     color: inherit;
@@ -248,13 +272,13 @@ body {
 
 .category-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(30,60,114,0.1);
+    box-shadow: 0 12px 25px rgba(30,60,114,0.1);
     border-color: #f0b90b;
 }
 
 .category-icon {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     border-radius: 50%;
     display: flex;
@@ -277,7 +301,7 @@ body {
 .category-desc {
     color: #64748b;
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .category-count {
@@ -296,26 +320,28 @@ body {
     font-size: 0.9rem;
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
     margin-top: auto;
 }
 
-/* أحدث التفسيرات */
+/* ============================================
+   أحدث التفسيرات
+   ============================================ */
 .latest-interpretations {
-    padding: 2.5rem 5%;
+    padding: 3rem 5%;
     background-color: #f9fafc;
 }
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .card {
     background: white;
-    border-radius: 20px;
+    border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: all 0.3s;
@@ -326,7 +352,7 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(30,60,114,0.1);
+    box-shadow: 0 12px 25px rgba(30,60,114,0.1);
 }
 
 .card-image {
@@ -378,7 +404,7 @@ body {
 .read-more {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     color: #1e3c72;
     font-weight: 600;
     border-bottom: 2px solid #f0b90b;
@@ -390,24 +416,26 @@ body {
 
 .read-more:hover {
     color: #f0b90b;
-    gap: 8px;
+    gap: 10px;
 }
 
-/* قسم المفسرين */
+/* ============================================
+   قسم المفسرين
+   ============================================ */
 .interpreters-section {
-    padding: 2.5rem 5%;
+    padding: 3rem 5%;
     background-color: white;
 }
 
 .interpreters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
 .interpreter-card {
     background: #f9fafc;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 1.5rem 1rem;
     text-align: center;
     transition: all 0.3s;
@@ -419,7 +447,7 @@ body {
 
 .interpreter-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.05);
 }
 
 .interpreter-card img {
@@ -455,7 +483,9 @@ body {
     display: inline-block;
 }
 
-/* التذييل */
+/* ============================================
+   التذييل (Footer)
+   ============================================ */
 .footer {
     background-color: #1e3c72;
     color: #ecf0f1;
@@ -464,7 +494,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -510,7 +540,9 @@ body {
     font-size: 0.85rem;
 }
 
-/* تحسينات الجوال */
+/* ============================================
+   تحسينات الجوال
+   ============================================ */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -521,19 +553,20 @@ body {
         width: 100%;
         background-color: #1e3c72;
         position: absolute;
-        top: 60px;
+        top: 65px;
         right: 0;
         padding: 1rem;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        gap: 0.5rem;
     }
     .nav-links.active {
         display: flex;
     }
     .nav-links li {
-        margin: 0.3rem 0;
+        margin: 0.2rem 0;
     }
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .hero h1 span {
         font-size: 1.5rem;
@@ -573,10 +606,10 @@ body {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .hero h1 span {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .stat-item {
         min-width: 60px;
@@ -585,11 +618,11 @@ body {
         padding: 1rem 0.5rem;
     }
     .category-icon {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
     .category-icon i {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .category-card h3 {
         font-size: 1rem;
