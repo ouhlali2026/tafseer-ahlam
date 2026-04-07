@@ -1,10 +1,8 @@
-// ============================================
 // انتظار تحميل الصفحة
-// ============================================
 document.addEventListener('DOMContentLoaded', function() {
 
     // ============================================
-    // 1. قائمة التنقل للجوال (Menu Toggle)
+    // 1. قائمة التنقل للجوال
     // ============================================
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
@@ -13,12 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         menuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
         });
-
-        // إغلاق القائمة عند النقر على أي رابط
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.classList.remove('active');
-            });
+            link.addEventListener('click', () => navLinks.classList.remove('active'));
         });
     }
 
@@ -31,13 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.backgroundColor = '#0f2b4f';
             navbar.style.boxShadow = '0 4px 15px rgba(0,0,0,0.3)';
         } else {
-            navbar.style.backgroundColor = '#1e3c72';
-            navbar.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+            navbar.style.backgroundColor = 'rgba(30, 60, 114, 0.95)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
         }
     });
 
     // ============================================
-    // 3. البحث (توجيه إلى صفحة نتائج البحث المحلية)
+    // 3. البحث
     // ============================================
     const searchInput = document.getElementById('search-input');
     const searchBtn = document.getElementById('search-btn');
@@ -48,8 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('الرجاء إدخال كلمة للبحث عنها');
             return;
         }
-        // توجيه إلى صفحة نتائج البحث (يمكن إنشاؤها لاحقاً)
-        // نستخدم encodeURIComponent لتجنب مشاكل الأحرف الخاصة
         window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
     }
 
@@ -61,26 +53,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ============================================
-    // 4. تمرير سلس للروابط الداخلية (لأقسام الصفحة)
+    // 4. تمرير سلس للروابط الداخلية
     // ============================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#' || href === '') return;
-            const target = document.querySelector(href);
+            const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 e.preventDefault();
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                target.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
-
-    // ============================================
-    // 5. إحصائيات متحركة (اختياري - يمكن تفعيلها إن أردت)
-    // لكن الأرقام ثابتة الآن في index.html، نحتفظ بالكود للاستخدام المستقبلي
-    // ============================================
-    // (تم تعطيلها لأن الأرقام في الصفحة ثابتة حالياً)
 });
