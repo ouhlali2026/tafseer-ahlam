@@ -1,5 +1,5 @@
 /* ============================================
-   reset.css - إعادة ضبط المتصفحات
+   RESET & GLOBAL STYLES
    ============================================ */
 * {
     margin: 0;
@@ -9,23 +9,23 @@
 
 body {
     font-family: 'Tajawal', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
-    color: #1e293b;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    color: #0f172a;
     line-height: 1.6;
 }
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 /* ============================================
-   شريط التنقل (حديث)
+   شريط التنقل (NAVBAR) – تصميم عصري
    ============================================ */
 .navbar {
-    background: rgba(30, 60, 114, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
     padding: 0.8rem 5%;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
     transition: all 0.3s;
 }
 
@@ -41,10 +41,10 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #f0b90b;
+    color: #f59e0b;
     font-size: 1.8rem;
     font-weight: 800;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    letter-spacing: -0.5px;
 }
 
 .logo i {
@@ -69,38 +69,36 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .nav-links a {
-    color: #ecf0f1;
+    color: #e2e8f0;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 50px;
     transition: all 0.3s;
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 1rem;
-    background: rgba(255,255,255,0.05);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    background: #f0b90b;
-    color: #1e3c72;
+    background: #f59e0b;
+    color: #0f172a;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* ============================================
-   القسم العلوي (Hero)
+   القسم العلوي (HERO) – تصميم جذاب
    ============================================ */
 .hero {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     color: white;
-    padding: 3rem 5%;
+    padding: 4rem 5%;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -113,7 +111,7 @@ body {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
     animation: rotate 30s linear infinite;
 }
 
@@ -130,29 +128,29 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.8rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     line-height: 1.3;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .hero h1 span {
-    color: #f0b90b;
+    color: #f59e0b;
     display: block;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
+/* شريط البحث */
 .search-container {
     display: flex;
     max-width: 550px;
     margin: 0 auto 2rem;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 
 #search-input {
@@ -174,11 +172,11 @@ body {
 }
 
 #search-btn {
-    background: #f0b90b;
-    color: #1e3c72;
+    background: #f59e0b;
+    color: #0f172a;
     border: none;
     border-radius: 60px;
-    padding: 0 1.8rem;
+    padding: 0 2rem;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -189,10 +187,11 @@ body {
 }
 
 #search-btn:hover {
-    background: #ffcd2e;
+    background: #eab308;
     transform: scale(1.03);
 }
 
+/* الإحصائيات */
 .stats-container {
     display: flex;
     justify-content: center;
@@ -201,75 +200,53 @@ body {
 }
 
 .stat-item {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.1);
     backdrop-filter: blur(8px);
     padding: 0.8rem 1.5rem;
     border-radius: 30px;
     min-width: 110px;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .stat-number {
     display: block;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 800;
-    color: #f0b90b;
+    color: #f59e0b;
 }
 
 .stat-label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     opacity: 0.9;
 }
 
 /* ============================================
-   التخطيط العام (عمودي + شريط جانبي)
+   العناوين العامة
    ============================================ */
-.main-content {
-    display: flex;
-    gap: 2rem;
-    padding: 3rem 0;
-}
-
-.primary-column {
-    flex: 3;
-}
-
-.sidebar {
-    flex: 1;
-}
-
-/* ============================================
-   التصنيفات (بطاقات حديثة)
-   ============================================ */
-.categories-section {
-    margin-bottom: 3rem;
-}
-
 .section-title {
     font-size: 2.2rem;
+    color: #0f172a;
     margin-bottom: 0.5rem;
-    position: relative;
-    display: inline-block;
+    text-align: center;
 }
 
 .section-title span {
-    color: #f0b90b;
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60%;
-    height: 3px;
-    background: linear-gradient(90deg, #f0b90b, transparent);
-    margin-top: 0.5rem;
+    color: #f59e0b;
 }
 
 .section-subtitle {
+    text-align: center;
     color: #64748b;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-size: 1rem;
+}
+
+/* ============================================
+   شبكة التصنيفات (CARDS)
+   ============================================ */
+.categories-section {
+    padding: 4rem 5%;
 }
 
 .categories-grid {
@@ -281,28 +258,28 @@ body {
 .category-card {
     background: white;
     border-radius: 24px;
-    padding: 1.5rem 1rem;
+    padding: 1.8rem 1rem;
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: all 0.3s;
     border: 1px solid #e2e8f0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
 }
 
 .category-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 30px rgba(30,60,114,0.15);
-    border-color: #f0b90b;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    border-color: #f59e0b;
 }
 
 .category-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -317,13 +294,13 @@ body {
 
 .category-icon i {
     font-size: 2rem;
-    color: #f0b90b;
+    color: #f59e0b;
 }
 
 .category-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
-    color: #1e3c72;
+    color: #0f172a;
 }
 
 .category-desc {
@@ -333,17 +310,17 @@ body {
 }
 
 .category-count {
-    background: #f0b90b20;
-    color: #1e3c72;
+    background: #fef3c7;
+    color: #b45309;
     padding: 0.2rem 0.8rem;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin-bottom: 0.5rem;
 }
 
 .category-link {
-    color: #f0b90b;
+    color: #f59e0b;
     font-weight: 600;
     font-size: 0.9rem;
     display: flex;
@@ -352,15 +329,16 @@ body {
 }
 
 /* ============================================
-   أحدث التفسيرات (بطاقات)
+   بطاقات التفسيرات (INTERPRETATIONS)
    ============================================ */
 .latest-interpretations {
-    margin-bottom: 3rem;
+    padding: 4rem 5%;
+    background: #f1f5f9;
 }
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
@@ -369,17 +347,17 @@ body {
     border-radius: 24px;
     overflow: hidden;
     transition: all 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
     border: 1px solid #e2e8f0;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
 }
 
 .card-image {
-    height: 160px;
+    height: 180px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -389,12 +367,12 @@ body {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: #f0b90b;
-    color: #1e3c72;
+    background: #f59e0b;
+    color: #0f172a;
     padding: 0.3rem 1rem;
     border-radius: 50px;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .card-content {
@@ -404,21 +382,21 @@ body {
 .card-content h3 {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
-    color: #1e3c72;
+    color: #0f172a;
 }
 
 .interpreter {
-    color: #f0b90b;
+    color: #f59e0b;
     font-weight: 600;
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .card-content p {
-    color: #64748b;
+    color: #475569;
     margin-bottom: 1rem;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -427,46 +405,47 @@ body {
 .read-more {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    color: #1e3c72;
+    gap: 5px;
+    color: #0f172a;
     font-weight: 600;
-    border-bottom: 2px solid #f0b90b;
+    border-bottom: 2px solid #f59e0b;
     padding-bottom: 2px;
     transition: all 0.3s;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
 .read-more:hover {
-    color: #f0b90b;
+    color: #f59e0b;
     gap: 10px;
 }
 
 /* ============================================
-   المفسرون
+   المفسرون (INTERPRETERS)
    ============================================ */
 .interpreters-section {
-    margin-bottom: 2rem;
+    padding: 4rem 5%;
+    background: white;
 }
 
 .interpreters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
 .interpreter-card {
-    background: white;
+    background: #f8fafc;
     border-radius: 24px;
     padding: 1.5rem;
     text-align: center;
     transition: all 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     border: 1px solid #e2e8f0;
 }
 
 .interpreter-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
 }
 
 .interpreter-card img {
@@ -474,25 +453,24 @@ body {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 3px solid #f0b90b;
-    padding: 2px;
+    border: 3px solid #f59e0b;
     object-fit: cover;
 }
 
 .interpreter-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #1e3c72;
+    color: #0f172a;
 }
 
 .interpreter-bio {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #475569;
     margin-bottom: 0.8rem;
 }
 
 .interpretations-count {
-    background: #1e3c72;
+    background: #0f172a;
     color: white;
     padding: 0.2rem 1rem;
     border-radius: 50px;
@@ -501,25 +479,24 @@ body {
 }
 
 /* ============================================
-   الشريط الجانبي (Sidebar)
+   الشريط الجانبي (SIDEBAR)
    ============================================ */
 .sidebar-widget {
     background: white;
     border-radius: 24px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     border: 1px solid #e2e8f0;
 }
 
 .sidebar-widget h3 {
-    font-size: 1.3rem;
-    color: #1e3c72;
+    font-size: 1.2rem;
+    color: #0f172a;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 8px;
-    border-bottom: 2px solid #f0b90b;
+    border-bottom: 2px solid #f59e0b;
     padding-bottom: 0.5rem;
 }
 
@@ -538,42 +515,40 @@ body {
     color: #334155;
     text-decoration: none;
     transition: all 0.3s;
-    padding: 0.4rem 0;
-    border-radius: 12px;
+    padding: 0.3rem 0;
 }
 
 .popular-list li a:hover {
-    color: #f0b90b;
+    color: #f59e0b;
     transform: translateX(-5px);
 }
 
 .popular-list li a i {
     width: 25px;
-    color: #f0b90b;
+    color: #f59e0b;
 }
 
 /* ============================================
-   التذييل
+   تذييل الصفحة (FOOTER)
    ============================================ */
 .footer {
-    background: #1e3c72;
-    color: #ecf0f1;
+    background: #0f172a;
+    color: #e2e8f0;
     padding: 2rem 5% 1rem;
-    margin-top: 2rem;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-section h3 {
-    color: #f0b90b;
+    color: #f59e0b;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -594,11 +569,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .footer-section ul li a:hover {
-    color: #f0b90b;
+    color: #f59e0b;
     transform: translateX(-5px);
 }
 
@@ -606,12 +581,12 @@ body {
     text-align: center;
     margin-top: 2rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #2a5298;
-    font-size: 0.85rem;
+    border-top: 1px solid #334155;
+    font-size: 0.8rem;
 }
 
 /* ============================================
-   استجابة للجوال
+   MEDIA QUERIES (استجابة للجوال)
    ============================================ */
 @media (max-width: 992px) {
     .main-content {
@@ -619,9 +594,6 @@ body {
     }
     .sidebar {
         order: 2;
-    }
-    .primary-column {
-        order: 1;
     }
 }
 
@@ -632,14 +604,13 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #1e3c72;
+        background: #0f172a;
         position: absolute;
         top: 70px;
         right: 0;
         width: 100%;
         padding: 1rem;
         gap: 0.5rem;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     .nav-links.active {
         display: flex;
@@ -661,13 +632,10 @@ body {
         min-width: 70px;
     }
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .categories-grid {
         grid-template-columns: 1fr 1fr;
-    }
-    .cards-grid {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -677,5 +645,11 @@ body {
     }
     .section-title {
         font-size: 1.8rem;
+    }
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    .hero h1 span {
+        font-size: 1.2rem;
     }
 }
