@@ -2,227 +2,254 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفسير الأحلام - الظواهر الطبيعية</title>
-    <meta name="description" content="تفسير رؤية الظواهر الطبيعية في المنام: المطر، الرعد، البرق، الرياح، الزلازل، البراكين، الثلوج، الضباب، قوس قزح، الكسوف، الخسوف، النيازك، الجفاف، الشفق، السحاب الملون، الهالة، الصقيع، والندى. تفسير ابن سيرين والنابلسي.">
-    <meta name="keywords" content="تفسير الظواهر الطبيعية, المطر في المنام, الرعد, البرق, الزلزال, الثلوج, الضباب, قوس قزح, الكسوف, الخسوف, النيازك, الجفاف, الشفق, السحاب الملون, الهالة, الصقيع">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>تفسير الظواهر الطبيعية | تفسير الأحلام</title>
+    <meta name="description" content="تفسير رؤية الظواهر الطبيعية في المنام: المطر والفيضانات، الرعد والبرق، الرياح والعواصف، الزلازل والبراكين، الثلوج والضباب، قوس قزح والكسوف، النيازك والشهب، الجفاف، الشفق، السحاب الملون، الهالة، الصقيع.">
     <link rel="stylesheet" href="style.css">
     <style>
-        .category-header {
+        .page-title {
+            text-align: center;
+            padding: 2rem;
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: white;
-            padding: 3rem 5%;
-            text-align: center;
-            border-radius: 0 0 50px 50px;
             margin-bottom: 2rem;
         }
-        .category-header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-        .category-header h1 span { color: #f59e0b; }
-        .category-header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
-        .breadcrumb { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; color: #94a3b8; }
-        .breadcrumb a { color: #f59e0b; text-decoration: none; }
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; padding: 0 5% 4rem; background: #f8fafc; }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .card-img {
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .card-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #f59e0b;
+            color: #0f172a;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        .card-content h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .card-content p {
+            color: #475569;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .read-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0f172a;
+            color: white;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
+    <!-- شريط التنقل (نفس الموجود في الموقع) -->
     <nav class="navbar">
         <div class="logo"><i class="fas fa-moon"></i> تفسير الأحلام</div>
         <ul class="nav-links">
             <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="index.html#categories" class="active">التصنيفات</a></li>
-            <li><a href="about.html">عن الموقع</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="hayawanat.html">الحيوانات</a></li>
+            <li><a href="tuyoor.html">الطيور</a></li>
+            <li><a href="ashkhas.html">الأشخاص</a></li>
+            <li><a href="amakin.html">الأماكن</a></li>
+            <li><a href="makoolat.html">المأكولات</a></li>
+            <li><a href="jamadat.html">الجمادات</a></li>
+            <li><a href="zawahir.html" class="active">الظواهر</a></li>
+            <li><a href="malabis.html">الملابس</a></li>
         </ul>
     </nav>
 
-    <div class="category-header">
-        <h1>تفسير <span>الظواهر الطبيعية</span> في المنام</h1>
+    <div class="page-title">
+        <h1>تفسير <span style="color:#f59e0b;">الظواهر الطبيعية</span> في المنام</h1>
         <p>المطر، الرعد، البرق، الرياح، الزلازل، البراكين، الثلوج، الضباب، قوس قزح، الكسوف، الخسوف، النيازك، الجفاف، الشفق، السحاب الملون، الهالة، الصقيع</p>
-        <div class="breadcrumb">
-            <a href="index.html">الرئيسية</a> / <a href="index.html#categories">التصنيفات</a> / <span>الظواهر الطبيعية</span>
-        </div>
     </div>
 
-    <div class="cards-grid">
-        <!-- المطر والفيضانات -->
+    <div class="cards-container">
+        <!-- 1. المطر والفيضانات -->
         <a href="interpretations/matar-wa-sayl.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=المطر');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=المطر');">
+                <span class="card-tag">مطر</span>
             </div>
             <div class="card-content">
                 <h3>المطر والفيضانات</h3>
-                <p>الغيث النافع، السيول الجارفة – رحمة أو عقوبة بحسب شدتها.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <p>الغيث النافع والسيول الجارفة – رحمة أو عقوبة بحسب شدتها.</p>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الرعد والبرق -->
+        <!-- 2. الرعد والبرق -->
         <a href="interpretations/raad-w-barq.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الرعد');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الرعد');">
+                <span class="card-tag">رعد</span>
             </div>
             <div class="card-content">
                 <h3>الرعد والبرق</h3>
                 <p>سلطان، غضب، إنذار – وقد يكون بشارة بنصر قريب.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الرياح والعواصف -->
+        <!-- 3. الرياح والعواصف -->
         <a href="interpretations/riyah-w-asif.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الرياح');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الرياح');">
+                <span class="card-tag">رياح</span>
             </div>
             <div class="card-content">
                 <h3>الرياح والعواصف</h3>
                 <p>رياح رحمة أو عذاب، وعواصف تغيير وتقلبات.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الزلازل والبراكين -->
+        <!-- 4. الزلازل والبراكين -->
         <a href="interpretations/zilzal-w-burkan.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الزلازل');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=زلزال');">
+                <span class="card-tag">زلزال</span>
             </div>
             <div class="card-content">
                 <h3>الزلازل والبراكين</h3>
                 <p>غضب إلهي، تغيير جذري، أو فتنة كبرى.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الثلوج والضباب -->
+        <!-- 5. الثلوج والضباب -->
         <a href="interpretations/thalj-w-dabab.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الثلوج');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=ثلوج');">
+                <span class="card-tag">ثلوج</span>
             </div>
             <div class="card-content">
                 <h3>الثلوج والضباب</h3>
                 <p>بياض الثلج خير، والضباب حيرة وانجلاء.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- قوس قزح والكسوف والخسوف -->
+        <!-- 6. قوس قزح والكسوف والخسوف -->
         <a href="interpretations/qaws-kusuf.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=قوس+قزح');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=قوس+قزح');">
+                <span class="card-tag">قوس قزح</span>
             </div>
             <div class="card-content">
                 <h3>قوس قزح والكسوف والخسوف</h3>
                 <p>عهد الأمان، تغير في السلطة، أو أحداث كونية.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- النيازك والشهب -->
+        <!-- 7. النيازك والشهب -->
         <a href="interpretations/shuhub-w-niyazik.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=النيازك');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=النيازك');">
+                <span class="card-tag">شهب</span>
             </div>
             <div class="card-content">
                 <h3>النيازك والشهب</h3>
                 <p>رجم الشياطين، أخبار مفاجئة، أو أحداث كبرى.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الجفاف (جديد) -->
+        <!-- 8. الجفاف (جديد) -->
         <a href="interpretations/jafaf.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الجفاف');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الجفاف');">
+                <span class="card-tag">جفاف</span>
             </div>
             <div class="card-content">
                 <h3>الجفاف والقحط</h3>
                 <p>ندرة الماء، جدب الأرض، ضيق في الرزق أو المشاعر.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الشفق (جديد) -->
+        <!-- 9. الشفق (جديد) -->
         <a href="interpretations/shafaq.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الشفق');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الشفق');">
+                <span class="card-tag">شفق</span>
             </div>
             <div class="card-content">
                 <h3>الشفق (ألوان الغروب)</h3>
                 <p>نهاية مرحلة، بداية أخرى، أو حنين وذكريات.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- السحاب الملون (جديد) -->
+        <!-- 10. السحاب الملون (جديد) -->
         <a href="interpretations/sahab-mulawwan.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=سحاب+ملون');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=سحاب+ملون');">
+                <span class="card-tag">سحاب ملون</span>
             </div>
             <div class="card-content">
                 <h3>السحاب الملون</h3>
                 <p>ألوان الغيوم تدل على أنواع المنافع والمحن.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الهالة حول القمر أو الشمس (جديد) -->
+        <!-- 11. الهالة حول القمر أو الشمس (جديد) -->
         <a href="interpretations/hala.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=هالة');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=هالة');">
+                <span class="card-tag">هالة</span>
             </div>
             <div class="card-content">
                 <h3>الهالة حول القمر أو الشمس</h3>
                 <p>سلطان يحيط به جنوده، أو أحداث كبرى.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
 
-        <!-- الصقيع (جديد) -->
+        <!-- 12. الصقيع (جديد) -->
         <a href="interpretations/sqi.html" class="card">
-            <div class="card-image" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الصقيع');">
-                <span class="card-category">ظواهر</span>
+            <div class="card-img" style="background-image: url('https://placehold.co/600x400/0f172a/f59e0b?text=الصقيع');">
+                <span class="card-tag">صقيع</span>
             </div>
             <div class="card-content">
                 <h3>الصقيع والجليد</h3>
                 <p>غلاء، جفاء، أو فترة جمود سرعان ما تزول.</p>
-                <span class="read-more">اقرأ التفسير <i class="fas fa-arrow-left"></i></span>
+                <span class="read-link">اقرأ التفسير →</span>
             </div>
         </a>
     </div>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3><i class="fas fa-moon"></i> تفسير الأحلام</h3>
-                <p>موقع يقدم تفسيرات الأحلام من كبار المفسرين.</p>
-            </div>
-            <div class="footer-section">
-                <h3>التصنيفات الرئيسية</h3>
-                <ul>
-                    <li><a href="hayawanat.html">الحيوانات</a></li>
-                    <li><a href="tuyoor.html">الطيور</a></li>
-                    <li><a href="ashkhas.html">الأشخاص</a></li>
-                    <li><a href="amakin.html">الأماكن</a></li>
-                    <li><a href="makoolat.html">المأكولات</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>روابط مهمة</h3>
-                <ul>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                    <li><a href="sitemap.xml">خريطة الموقع</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>جميع الحقوق محفوظة &copy; 2025 تفسير الأحلام</p>
-        </div>
+        <p>جميع الحقوق محفوظة &copy; 2025 تفسير الأحلام</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
